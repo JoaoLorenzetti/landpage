@@ -7,30 +7,34 @@
 body {
     background-color: #E2F5FA;
     font-family: Arial, sans-serif;
-    max-width: 100%;
     overflow-x: hidden;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius: 5vw;
+    border-top-right-radius: 5vw;
 }
 
 /* ==================== HEADER ==================== */
 header {
     width: 100%;
-    max-width: 100%; 
-    height: 80px;
+    height: 20vw;
+    max-height: 80px;
+    min-height: 60px;
     background-color: #F8F8FF;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    margin: 33px auto 0;
+    margin: 8vw auto 0;
 }
 
 .hamburger-menu {
-    width: 40px;
-    height: 40px;
+    width: 10vw;
+    height: 10vw;
+    max-width: 40px;
+    max-height: 40px;
+    min-width: 30px;
+    min-height: 30px;
     position: absolute;
-    left: 17px;
+    left: 4vw;
     background: none;
     border: none;
     cursor: pointer;
@@ -43,7 +47,9 @@ header {
 }
 
 .logo {
-    height: 44px;
+    height: 11vw;
+    max-height: 44px;
+    min-height: 35px;
     display: flex;
     align-items: center;
 }
@@ -56,45 +62,46 @@ header {
 /* ==================== SEÇÃO HERO ==================== */
 #hero {
     width: 100%;
-    max-width: 100%; 
     margin: 0 auto;
     padding: 0;
     background-color: #E2F5FA;
     position: relative;
     background-image: url(images/oval_fundo.svg);
     background-repeat: no-repeat;
-    z-index: -1;
-    background-position: center -50px;
+    background-position: center -12vw;
     background-size: 100% auto;
 }
 
 .hero-content {
     width: 100%;
-    max-width: 393px; 
-    margin: 0 auto;
     position: relative;
-    height: 356px;
+    height: 90vw;
+    max-height: 400px;
+    min-height: 320px;
 }
 
 .hero-title {
-    width: 55.5%; 
-    height: 87px;
+    width: 55%;
     position: absolute;
-    top: 30px;
-    left: 8.4%; 
+    top: 7vw;
+    left: 8vw;
     font-family: 'Inter', Arial, sans-serif;
     font-weight: 700;
-    font-size: 24px;
-    line-height: 100%;
+    font-size: 6vw;
+    max-font-size: 28px;
+    min-font-size: 20px;
+    line-height: 1.1;
     color: #063643;
 }
 
 .hero-image {
-    width: 84.2%; 
-    height: 120px;
+    width: 84%;
+    height: 30vw;
+    max-height: 140px;
+    min-height: 100px;
     position: absolute;
-    top: 70px;
-    left: 8.7%; 
+    top: 18vw;
+    left: 8vw;
     z-index: 2;
 }
 
@@ -105,19 +112,23 @@ header {
 }
 
 .cta-button {
-    width: 43%; 
-    height: 40px;
+    width: 43%;
+    height: 10vw;
+    max-height: 45px;
+    min-height: 35px;
     position: absolute;
-    top: 210px;
-    left: 27.5%; 
+    top: 53vw;
+    left: 27%;
     background-color: #0F637A;
     color: #F8F8FF;
     border: none;
-    border-radius: 4.44px;
+    border-radius: 1vw;
     cursor: pointer;
     font-family: Arial, sans-serif;
     font-weight: 700;
-    font-size: 15.56px;
+    font-size: 4vw;
+    max-font-size: 18px;
+    min-font-size: 14px;
     transition: background-color 0.3s ease;
     z-index: 3;
 }
@@ -130,13 +141,12 @@ header {
 #Somos {
     width: 100%;
     background-color: #89C5D5;
-    padding: 30px 20px;
-    margin: 0 auto;
-    margin-top: -80px;
+    padding: 8vw 5vw;
+    margin-top: -20vw;
 }
 
 .QuemSomos {
-    max-width: 393px; 
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -147,14 +157,18 @@ header {
 .Titulo {
     font-family: 'Poppins', Arial, sans-serif;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 7vw;
+    max-font-size: 32px;
+    min-font-size: 24px;
     color: #063643;
-    margin-bottom: 30px;
+    margin-bottom: 8vw;
 }
 
 .logo2 {
-    width: 167px;
-    margin-bottom: 30px;
+    width: 42vw;
+    max-width: 200px;
+    min-width: 150px;
+    margin-bottom: 8vw;
 }
 
 .logo2 img {
@@ -165,165 +179,114 @@ header {
 .texto1 {
     font-family: Arial, sans-serif;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 3.5vw;
+    max-font-size: 16px;
+    min-font-size: 13px;
+    line-height: 1.4;
     letter-spacing: 0.01em;
     color: #063643;
-    margin-bottom: 30px;
-    max-width: 335px;
+    margin-bottom: 8vw;
+    max-width: 85%;
 }
 
 .texto2 {
     font-family: 'Open Sans', Arial, sans-serif;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 4vw;
+    max-font-size: 18px;
+    min-font-size: 15px;
+    line-height: 1.25;
     letter-spacing: 0.02em;
     color: #063643;
 }
 
-/* ==================== RESPONSIVIDADE MOBILE ==================== */
+/* ==================== RESPONSIVIDADE ==================== */
 
-/* Mobile pequeno (iPhone SE, etc.) */
-@media (max-width: 374px) {
-    .hero-content {
-        max-width: 100%;
-        padding: 0 15px;
-    }
-    
-    .hero-title {
-        font-size: 22px;
-        width: 60%;
-    }
-    
-    .hero-image {
-        width: 90%;
-        left: 5%;
-    }
-    
-    .cta-button {
-        width: 50%;
-        left: 25%;
-        font-size: 14px;
-    }
-    
-    .QuemSomos {
-        max-width: 100%;
-        padding: 0 15px;
-    }
-}
-
-/* Mobile médio (iPhone 6/7/8, etc.) */
-@media (min-width: 375px) and (max-width: 413px) {
-    .hero-content {
-        max-width: 375px;
-    }
-}
-
-/* Mobile grande (iPhone Plus, etc.) */
-@media (min-width: 414px) and (max-width: 767px) {
-    .hero-content {
-        max-width: 414px;
-    }
-    
-    .hero-title {
-        font-size: 26px;
-    }
-    
-    .hero-image {
-        height: 130px;
-    }
-    
-    .cta-button {
-        height: 44px;
-        font-size: 16px;
-    }
-    
-    .Titulo {
-        font-size: 30px;
-    }
-    
-    .texto1 {
-        font-size: 15px;
-        line-height: 22px;
-    }
-    
-    .texto2 {
-        font-size: 17px;
-    }
-}
-
-/* ==================== RESPONSIVIDADE TABLET+ ==================== */
-
-/* Tablets */
+/* Tablets Portrait */
 @media (min-width: 768px) {
+    body {
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+
     header {
-        height: 100px;
-        margin: 40px auto 0;
+        height: 15vw;
+        max-height: 100px;
+        margin: 5vw auto 0;
     }
-    
+
     .hamburger-menu {
-        width: 50px;
-        height: 50px;
-        left: 30px;
+        width: 7vw;
+        height: 7vw;
+        max-width: 50px;
+        max-height: 50px;
+        left: 3vw;
     }
-    
+
     .logo {
-        height: 55px;
+        height: 8vw;
+        max-height: 60px;
     }
 
     #hero {
-        background-position: center -80px;
+        background-position: center -8vw;
         background-size: 80% auto;
     }
 
     .hero-content {
-        max-width: 500px;
-        height: 450px;
+        height: 60vw;
+        max-height: 500px;
     }
-    
+
     .hero-title {
-        font-size: 32px;
-        top: 40px;
+        font-size: 4.5vw;
+        max-font-size: 36px;
+        top: 5vw;
     }
-    
+
     .hero-image {
-        height: 150px;
-        top: 90px;
+        height: 20vw;
+        max-height: 180px;
+        top: 12vw;
     }
-    
+
     .cta-button {
-        height: 50px;
-        font-size: 18px;
-        top: 270px;
+        height: 7vw;
+        max-height: 55px;
+        top: 35vw;
+        font-size: 2.5vw;
+        max-font-size: 20px;
+        border-radius: 0.8vw;
     }
 
     #Somos {
-        padding: 50px 40px;
-        margin-top: -100px;
-    }
-    
-    .QuemSomos {
-        max-width: 500px;
+        padding: 6vw 4vw;
+        margin-top: -12vw;
     }
 
     .Titulo {
-        font-size: 36px;
+        font-size: 5vw;
+        max-font-size: 40px;
+        margin-bottom: 6vw;
     }
 
     .logo2 {
-        width: 200px;
+        width: 25vw;
+        max-width: 250px;
+        margin-bottom: 6vw;
     }
 
     .texto1 {
-        font-size: 16px;
-        line-height: 24px;
-        max-width: 450px;
+        font-size: 2.2vw;
+        max-font-size: 18px;
+        margin-bottom: 6vw;
+        max-width: 70%;
     }
 
     .texto2 {
-        font-size: 18px;
-        line-height: 24px;
+        font-size: 2.5vw;
+        max-font-size: 20px;
     }
 }
+
 
