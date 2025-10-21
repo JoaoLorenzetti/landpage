@@ -68,6 +68,7 @@ header {
     width: 100%;
     position: relative;
     height: clamp(320px, 90vw, 400px);
+    
 }
 
 .hero-title {
@@ -95,6 +96,7 @@ header {
     width: 100%;
     height: 100%;
     object-fit: contain;
+    
 }
 
 .cta-button {
@@ -124,7 +126,7 @@ header {
     width: 100%;
     background-color: #89C5D5;
     padding: 8vw 5vw;
-    margin-top: -20vw;
+    margin-top: -30vw;
 }
 
 .QuemSomos {
@@ -176,6 +178,51 @@ header {
 
 /* ==================== RESPONSIVIDADE ==================== */
 
+@media (min-width: 320px){
+    .hero-image {
+        height: clamp(220px, 18vw, 300px); 
+        top: -1vw; 
+        display: flex;
+    }
+
+    #Somos {
+    padding: 8vw 5vw;
+    margin-top: -1vw;
+}
+
+.hero-content {
+    height: clamp(250px, 70vw, 360px); 
+}
+
+.cta-button {
+    margin-top: 10px;
+
+}
+
+
+}
+@media (min-width: 375px){
+
+    .hero-image{
+        top: 3vw;
+    }
+
+    .cta-button{
+        margin-top: -2px;
+    }
+}
+
+@media (min-width: 425px){
+        .hero-image{
+        top: 7vw;
+    }
+
+    .cta-button{
+        margin-top: -2px;
+    }
+
+}
+
 /* Tablets Portrait */
 @media (min-width: 768px) {
     body {
@@ -212,21 +259,23 @@ header {
         top: 5vw;
     }
 
-    .hero-image {
-        height: clamp(140px, 20vw, 180px);
-        top: 12vw;
+   .hero-image {
+        height: clamp(220px, 18vw, 300px); 
+        top: 12vw; 
     }
 
     .cta-button {
         height: clamp(45px, 7vw, 55px);
-        top: 35vw;
+        top: 50vw;
         font-size: clamp(16px, 2.5vw, 20px);
-        border-radius: 0.8vw;
+        border-radius: 0.8vw;   
+        margin-top: -30px;
+        
     }
 
     #Somos {
         padding: 6vw 4vw;
-        margin-top: -12vw;
+        margin-top: -1vw;
     }
 
     .Titulo {
@@ -347,8 +396,9 @@ header {
         font-size: clamp(45px, 3.5vw, 52px);
     }
 
-    .hero-image {
-        height: clamp(220px, 15vw, 250px);
+ .hero-image {
+        height: clamp(220px, 18vw, 300px); /* imagem maior */
+        top: 8vw; /* opcional — pode mover ela pra ajustar o alinhamento */
     }
 
     .cta-button {
