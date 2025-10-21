@@ -1,0 +1,135 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #FAFDFF;
+    margin: 0;
+    padding: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    padding: 0;
+}
+
+h1 {
+    color: #063643;
+    font-size: 5vw;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 5vw;
+}
+
+.formulario_ctt {
+    display: flex;
+    flex-direction: column;
+    gap: 3.75vw;
+}
+
+.forma {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: #063643;
+    font-size: 3.5vw;
+    font-weight: 700;
+    margin-bottom: 1.25vw;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    height: 9.825vw;
+    padding: 2.5vw;
+    border: 0.28vw solid rgba(0, 0, 0, 0.4);
+    border-radius: 1.31vw;
+    box-sizing: border-box;
+    font-size: 4vw; 
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s;
+    box-shadow: 0 0.3275vw 0.3275vw 0 rgba(0, 0, 0, 0.15); 
+}
+
+textarea {
+    height: 24.89vw;
+    min-height: 24.89vw;
+    resize: none;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #063643;
+    box-shadow: 0 0 1.25vw rgba(6, 54, 67, 0.5);
+}
+
+.enviar {
+    background-color: #063643;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 5.1175vw;
+    font-weight: 700;
+    width: 36.8375vw;
+    height: 14.07vw;
+    border: none;
+    border-radius: 1.31vw;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    margin-top: 6.25vw;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-enviar:hover {
+    background-color: #042730;
+} 
+
+
+@media (min-width: 500px) {
+    h1 {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+
+    label {
+        font-size: 13.1px;
+        margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        height: 39.3px;
+        padding: 10px;
+        border: 1.12px solid rgba(0, 0, 0, 0.4);
+        border-radius: 5.24px;
+        font-size: 16px;
+        box-shadow: 0 1.31px 1.31px 0 rgba(0, 0, 0, 0.15);
+    }
+    
+    textarea {
+        height: 99.56px;
+        min-height: 99.56px;
+    }
+
+    input:focus,
+    textarea:focus {
+        box-shadow: 0 0 5px rgba(6, 54, 67, 0.5);
+    }
+
+    .enviar {
+        font-size: 20.47px;
+        width: 147.35px;
+        height: 56.28px;
+        border-radius: 5.24px;
+        margin-top: 25px;
+    }
+}

@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.caixote {
+    width: 400px;
+    height: 80px;
+    background-color: #e6f7ff; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    font-size: 20px; 
+    font-weight: bold; 
+    color: #003366; 
+    font-family: 'Poppins', sans-serif; 
+}
+
+.banner {
+    width: 100%; 
+    padding: 4.33vw 5.34vw;
+    background-color: #F8F8FF;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 4.33vw; 
+    box-sizing: border-box;
+}
+
+.cartão_medico {
+    width: 100%;
+    max-width: 42.24vw; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+}
+
+.imagem- {
+    width: 100%;
+    aspect-ratio: 166 / 202; 
+    object-fit: cover;
+    border: 0.25vw solid rgba(6, 61, 67, 0.5); 
+    border-radius: 1.02vw;
+    margin-bottom: 1.78vw; 
+}
+
+
+.nome {
+    width: 100%;
+    margin: 0; 
+    color: #063643;
+    font-size: 3.85vw; 
+    font-weight: 500;
+    line-height: 100%;
+    text-align: center;
+}
+
+.especialidade {
+    width: 100%;
+    margin: 0;
+    margin-top: 0.25vw; 
+    color: #063643;
+    font-size: 2.75vw; 
+    font-weight: 400;
+    line-height: 100%;
+    text-align: center;
+}
+
+@media (min-width: 393px) {
+    .banner {
+        width: 393px;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        justify-content: space-between; 
+        margin: auto;
+        gap: 29.5px 0; 
+        padding: 20px; 
+        box-sizing: border-box; 
+    }
+
+    .cartao_medico {
+        width: 166px; 
+        max-width: none;
+        margin-bottom: 15px;
+    }
+
+    .imagem {
+        width: 166px;
+        height: 166px;
+        aspect-ratio: auto;
+        border: 1px solid rgba(6, 61, 67, 0.5); 
+        border-radius: 4px;
+        margin-bottom: 7px; 
+    }
+    
+    .nome {
+        font-size: 15.14px; 
+    }
+
+    .especialidade {
+        font-size: 10.81px;
+        margin-top: 1px;
+    }
+}
