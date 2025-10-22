@@ -1,6 +1,8 @@
 const avaliacaoQuadrantes = document.querySelectorAll('.quadrante_avaliacao');
 const setaAnterior = document.querySelector('.seta_anterior');
-const setaProxima = document.querySelector('.rodape_paginacao button:not(.seta_anterior)');
+
+const setaProxima = document.querySelector('.seta_proxima'); 
+
 const numeroPaginaSpan = document.querySelector('.numero_pagina');
 let paginaAtual = 0;
 const totalPaginas = avaliacaoQuadrantes.length;
