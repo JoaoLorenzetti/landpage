@@ -388,6 +388,26 @@ header {
     .texto2 {
         font-size: clamp(18px, 2.5vw, 20px);
     }
+
+    .servicos-titulo {
+    width: 100%;
+    height: 45px;
+    margin-top: 0vw;
+}
+
+.servicos-texto {
+    width: 400px;
+    height: 50px;
+    margin: 5px auto 0;
+}
+
+.btn-agendar {
+    width: 200px;
+    left: 265px;
+    height: 38.99px;
+    margin: 50px auto 0;
+}
+
 }
 
 /* Desktop */
@@ -490,7 +510,7 @@ header {
  .hero-image {
         height: clamp(220px, 18vw, 300px); 
         top: 8vw; 
-    }
+     }
 
     .cta-button {
         height: clamp(60px, 5vw, 70px);
