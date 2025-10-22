@@ -398,7 +398,9 @@ header {
 .servicos-texto {
     width: 400px;
     height: 50px;
-    margin: 5px auto 0;
+    margin: 12px auto 0;
+    line-height: 23px;
+    font-size: 15px;
 }
 
 .btn-agendar {
