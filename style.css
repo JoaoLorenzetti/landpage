@@ -176,6 +176,85 @@ header {
     color: #063643;
 }
 
+/* =================== SEÇÃO SERVIÇOS ======================= */
+
+#Servicos {
+    width: 100%;
+    height: 330px;
+    background-color: #63B3C9;
+    padding: 30px 20px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.servicos-titulo {
+    width: 100%;
+    height: 45px;
+    margin-top: -3vw;
+    font-family: 'Inter', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    text-align: center;
+    color: #063643;
+}
+
+.servicos-texto {
+    width: 100%;
+    height: 50px;
+    margin: 20px auto 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #063643;
+}
+
+.btn-agendar {
+    width: 200px;
+    left: 40px;
+    height: 38.99px;
+    margin: 50px auto 0;
+    background-color: #F8F8FF;
+    color: #063643;
+    border: none;
+    border-radius: 2.19px;
+    padding: 5.48px 2.74px;
+    cursor: pointer;
+    font-family: 'Inter', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.btn-agendar:hover {
+    background-color: #e8e8f5;
+}
+
+.servicos-image {
+    position: absolute;
+    bottom: -30px;
+    right: 5px;
+    width: auto;
+    height: 126px;
+    z-index: 1;
+}
+
+.servicos-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+
+
 /* ==================== RESPONSIVIDADE ==================== */
 
 @media (min-width: 320px){
@@ -210,6 +289,13 @@ header {
     .cta-button{
         margin-top: -2px;
     }
+
+    .btn-agendar {
+         left: 70px;
+         margin: 38px auto 0;
+}
+
+
 }
 
 @media (min-width: 425px){
@@ -220,6 +306,11 @@ header {
     .cta-button{
         margin-top: -2px;
     }
+
+     .btn-agendar {
+         left: 95px;
+}
+
 
 }
 
@@ -297,6 +388,28 @@ header {
     .texto2 {
         font-size: clamp(18px, 2.5vw, 20px);
     }
+
+    .servicos-titulo {
+    width: 100%;
+    height: 45px;
+    margin-top: 0vw;
+}
+
+.servicos-texto {
+    width: 400px;
+    height: 50px;
+    margin: 12px auto 0;
+    line-height: 23px;
+    font-size: 15px;
+}
+
+.btn-agendar {
+    width: 200px;
+    left: 265px;
+    height: 38.99px;
+    margin: 50px auto 0;
+}
+
 }
 
 /* Desktop */
@@ -397,9 +510,9 @@ header {
     }
 
  .hero-image {
-        height: clamp(220px, 18vw, 300px); /* imagem maior */
-        top: 8vw; /* opcional — pode mover ela pra ajustar o alinhamento */
-    }
+        height: clamp(220px, 18vw, 300px); 
+        top: 8vw; 
+     }
 
     .cta-button {
         height: clamp(60px, 5vw, 70px);
