@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #e0f7fa;
+}
+
+.localizacao-card {
+    width: 420px;
+    height: 692px;
+    background-color: #F8F8FF;
+    padding: 0;
+    border-radius: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.titulo-localizacao {
+    margin-top: 51px;
+    margin-left: 21px;
+    margin-bottom: 40px;
+    
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    color: #063643;
+    width: 117px;
+}
+
+.endereco-info {
+    margin-left: 20px;
+    margin-bottom: 70px;
+    
+    font-family: 'Inter', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #063643;
+    width: 280px;
+}
+
+.mapa-container {
+    width: 350px;
+    height: 244.16px;
+    margin-left: 35px;
+    margin-bottom: 46.84px;
+    
+    border-radius: 4px;
+    border: 1px solid rgba(6, 54, 67, 0.4);
+    overflow: hidden;
+}
+
+.mapa-imagem {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.contatos-sociais {
+    padding-bottom: 14px;
+}
+
+.contato-item {
+    margin-left: 20px;
+    /* Aplica a margem superior e inferior de 8px para os itens que ficam entre outros */
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.contato-info-box {
+    display: flex;
+    align-items: center;
+}
+
+/* Regras específicas para o primeiro e último item: */
+.first-contato {
+    margin-top: 0; /* Remove a margem superior para o primeiro item */
+}
+
+.last-contato {
+    margin-bottom: 0; /* Remove a margem inferior para o último item */
+}
+
+.icone-social {
+    width: 36px;
+    height: 36px;
+    margin-right: 12px;
+    display: block;
+}
+
+.contato-texto {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #063643;
+    
+    display: inline-block;
+    height: 25px;
+}
+
+.texto-whatsapp {
+    width: 168px;
+}
+.texto-instagram {
+    width: 212px;
+}
+.texto-facebook {
+    width: 195px;
+}
