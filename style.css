@@ -327,20 +327,39 @@ header {
     --espacamento-interno-container: 20px;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    max-height: 100vh;
+    padding: 0;
+    overflow: hidden;
+}
+
 .avaliacoes_secao {
-    width: 400px; 
+    width: 100%;
+    height: 100vh;
     background-color: var(--cor-fundo-secao); 
     display: flex;
     justify-content: center;
-    padding: 20px 0;
-    margin: 0 auto; 
+    align-items: center;
+    padding: 20px;
 }
 
 .container_principal {
-    width: 360px; 
+    width: 100%;
+    max-width: 100%;
     background-color: var(--cor-fundo-container); 
-    padding: var(--espacamento-interno-container) 15px; 
-    box-sizing: border-box; 
+    padding: var(--espacamento-interno-container) 15px;
 }
 
 .avaliacoes_titulo {
@@ -354,12 +373,15 @@ header {
 }
 
 .quadrante_avaliacao {
-    display: none; 
+    display: none;
     width: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .quadrante_avaliacao.pagina_ativa {
-    display: block; 
+    display: block;
+    opacity: 1;
 }
 
 .item_avaliacao {
@@ -378,7 +400,8 @@ header {
     border-radius: 50%; 
     object-fit: cover;
     margin-right: 15px; 
-    flex-shrink: 0; 
+    flex-shrink: 0;
+    background-color: #ccc;
 }
 
 .conteudo_cliente {
@@ -386,15 +409,15 @@ header {
 }
 
 .estrelas_imagem {
-    width: 100px; 
-    height: 15.14px; 
+    width: 100px;
+    height: 15.14px;
     object-fit: contain;
-    margin-bottom: 5px; 
+    margin-bottom: 5px;
 }
 
 .nome_cliente {
     font-family: 'Inter', sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 13.24px;
     color: var(--cor-texto-principal);
     line-height: 100%;
@@ -415,7 +438,7 @@ header {
     width: 100%;
     height: 44.91px;
     display: flex;
-    justify-content: flex-end; 
+    justify-content: center; 
     align-items: center;
     margin-top: 25px; 
 }
@@ -425,7 +448,7 @@ header {
     font-size: 18px; 
     font-weight: 400;
     color: var(--cor-texto-principal);
-    margin-right: 10px;
+    margin: 0 10px;
     display: flex;
     align-items: center;
     height: 30px;
@@ -437,17 +460,20 @@ header {
     color: var(--cor-texto-principal);
     border: none;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
     border-radius: 50%; 
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: background-color 0.3s, opacity 0.3s;
+    transition: background-color 0.3s, opacity 0.3s, transform 0.2s;
+}
+
+.seta_navegacao:hover:not(:disabled) {
+    transform: scale(1.1);
 }
 
 .seta_anterior {
-    margin-right: 15px; 
     background-color: transparent; 
     color: gray;
 }
@@ -467,6 +493,221 @@ header {
 .seta_proxima.desabilitado {
     background-color: transparent !important;
     color: gray;
+}
+
+.estrelas_container {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+/* ========================================
+   RESPONSIVIDADE
+   ======================================== */
+
+/* Mobile S (320px - 374px) */
+@media screen and (max-width: 374px) {
+    .avaliacoes_secao {
+        padding: 15px;
+    }
+    
+    .container_principal {
+        padding: 15px 10px;
+    }
+    
+    .avaliacoes_titulo {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    
+    :root {
+        --tamanho-foto: 45px;
+        --espacamento-item-vertical: 14px;
+    }
+    
+    .foto_cliente {
+        margin-right: 12px;
+    }
+    
+    .nome_cliente {
+        font-size: 12px;
+    }
+    
+    .texto_avaliacao {
+        font-size: 11px;
+    }
+    
+    .estrelas_imagem {
+        width: 85px;
+        height: 12.87px;
+    }
+    
+    .seta_navegacao {
+        width: 45px;
+        height: 38px;
+        font-size: 20px;
+    }
+    
+    .numero_pagina {
+        font-size: 16px;
+    }
+    
+    .rodape_paginacao {
+        margin-top: 20px;
+    }
+}
+
+/* Mobile M (375px - 424px) */
+@media screen and (min-width: 375px) and (max-width: 424px) {
+    .avaliacoes_secao {
+        padding: 18px;
+    }
+    
+    .container_principal {
+        padding: 18px 12px;
+    }
+    
+    .avaliacoes_titulo {
+        font-size: 19px;
+        margin-bottom: 22px;
+    }
+    
+    :root {
+        --tamanho-foto: 48px;
+        --espacamento-item-vertical: 15px;
+    }
+    
+    .foto_cliente {
+        margin-right: 13px;
+    }
+    
+    .nome_cliente {
+        font-size: 12.5px;
+    }
+    
+    .texto_avaliacao {
+        font-size: 11.5px;
+    }
+    
+    .estrelas_imagem {
+        width: 90px;
+        height: 13.63px;
+    }
+    
+    .seta_navegacao {
+        width: 48px;
+        height: 41px;
+        font-size: 22px;
+    }
+    
+    .numero_pagina {
+        font-size: 17px;
+    }
+}
+
+/* Mobile L (425px - 767px) */
+@media screen and (min-width: 425px) and (max-width: 767px) {
+    .avaliacoes_secao {
+        padding: 20px;
+    }
+    
+    .container_principal {
+        padding: 20px 15px;
+        max-width: 500px;
+    }
+    
+    .avaliacoes_titulo {
+        font-size: 22px;
+        margin-bottom: 25px;
+    }
+    
+    :root {
+        --tamanho-foto: 52px;
+        --espacamento-item-vertical: 16px;
+    }
+    
+    .nome_cliente {
+        font-size: 14px;
+    }
+    
+    .texto_avaliacao {
+        font-size: 12.5px;
+    }
+    
+    .estrelas_imagem {
+        width: 100px;
+        height: 15.14px;
+    }
+}
+
+/* Tablet (768px - 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .avaliacoes_secao {
+        padding: 25px;
+    }
+    
+    .container_principal {
+        padding: 25px 20px;
+        max-width: 600px;
+    }
+    
+    .avaliacoes_titulo {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    
+    :root {
+        --tamanho-foto: 60px;
+        --espacamento-item-vertical: 18px;
+    }
+    
+    .foto_cliente {
+        margin-right: 18px;
+    }
+    
+    .nome_cliente {
+        font-size: 15px;
+        margin: 6px 0 10px 0;
+    }
+    
+    .texto_avaliacao {
+        font-size: 13.5px;
+        line-height: 1.5;
+    }
+    
+    .estrelas_imagem {
+        width: 110px;
+        height: 16.65px;
+    }
+    
+    .seta_navegacao {
+        width: 56px;
+        height: 48px;
+        font-size: 26px;
+    }
+    
+    .numero_pagina {
+        font-size: 20px;
+        margin-right: 12px;
+    }
+    
+    .rodape_paginacao {
+        margin-top: 30px;
+    }
+    
+    .seta_anterior {
+        margin-right: 18px;
+    }
+}
+
+/* Desktop (acima de 1024px) - Mantém dimensões originais */
+@media screen and (min-width: 1025px) {
+    .avaliacoes_secao {
+        padding: 30px;
+    }
+    
+    .container_principal {
+        max-width: 650px;
+    }
 }
 
 /* ==================== CONTATO (GABRIEL) ==================== */
