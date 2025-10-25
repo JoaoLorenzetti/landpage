@@ -3,15 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pindorama Pets Footer</title>
+    <title>Pindorama Pets - Contato</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:wght@400&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="gabriel_desk.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Conteúdo Principal: Localização e Contato -->
+    <div class="page-content">
+        <div class="container-principal">
+            <div class="localizacao-card">
+                <h2 class="titulo-localizacao">Localização</h2>
 
+                <address class="endereco-info">
+                    Rua - Fulana de tal, 9999<br>
+                    CEP 99999-999<br>
+                    Pindorama/SP
+                </address>
+
+                <div class="mapa-container">
+                    <img class="mapa-imagem" src="assets/imagens/mapa.png" alt="Localização da Clínica no Mapa">
+                </div>
+
+                <div class="contatos-sociais">
+                    <div class="contato-item first-contato"> 
+                        <div class="contato-info-box">
+                            <img class="icone-social" src="assets/imagens/whatsapp.jpg" alt="Ícone do WhatsApp">
+                            <span class="contato-texto">(99)-99999999</span>
+                        </div>
+                    </div>
+
+                    <div class="contato-item"> 
+                        <div class="contato-info-box">
+                            <img class="icone-social" src="assets/imagens/instagram.jpg" alt="Ícone do Instagram">
+                            <span class="contato-texto">@PindoramaClinica</span>
+                        </div>
+                    </div>
+
+                    <div class="contato-item last-contato">
+                        <div class="contato-info-box">
+                            <img class="icone-social" src="assets/imagens/facebook.jpg" alt="Ícone do Facebook">
+                            <span class="contato-texto">PindoramaClinica</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="contato-secao">
+                <h1>Entre em contato</h1>
+                
+                <form class="formulario_ctt">
+                    <div class="forma">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="forma">
+                        <label for="sobrenome">Sobrenome</label>
+                        <input type="text" id="sobrenome" name="sobrenome" required>
+                    </div>
+                    <div class="forma">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="forma">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="3" required></textarea> 
+                    </div>
+                    
+                    <button type="submit" class="enviar">ENVIAR</button>
+                </form>
+            </section>
+        </div>
+    </div>
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="conteudo">
-
             <div class="margem logo">
                 <img src="assets/imagens/logotipo" alt="Pindorama Pets Logo" class="imagem">
             </div>
@@ -42,13 +108,11 @@
                     <img src="assets/imagens/facebook.jpg" alt="Facebook" class="imagem_logoss">
                 </div>
             </div>
-
         </div>
 
         <div class="bottom_fotter">
             <p class="txt_final">UNECT JR - TODOS OS DIREITOS RESERVADOS</p>
         </div>
     </footer>
-
 </body>
 </html>

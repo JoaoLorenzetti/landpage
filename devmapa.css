@@ -1,24 +1,47 @@
-body {
+* {
     margin: 0;
-    padding: 20px;
-    background-color: #e0f7fa;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    background-color: #e0f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container-principal {
+    width: 1020px;
+    height: 692px;
+    max-width: 1020px;
+    max-height: 692px;
+    display: flex;
+    background-color: #F8F8FF;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+}
+
+/* SEÇÃO LOCALIZAÇÃO (ESQUERDA) */
 .localizacao-card {
     width: 420px;
+    min-width: 420px;
     height: 692px;
     background-color: #F8F8FF;
     padding: 0;
-    border-radius: 8px;
-    box-sizing: border-box;
+    border-right: 2px solid rgba(6, 54, 67, 0.1);
     overflow: hidden;
+    flex-shrink: 0;
 }
 
 .titulo-localizacao {
     margin-top: 51px;
     margin-left: 21px;
     margin-bottom: 40px;
-    
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 20px;
@@ -30,7 +53,6 @@ body {
 .endereco-info {
     margin-left: 20px;
     margin-bottom: 70px;
-    
     font-family: 'Inter', sans-serif;
     font-style: italic;
     font-weight: 400;
@@ -45,10 +67,10 @@ body {
     height: 244.16px;
     margin-left: 35px;
     margin-bottom: 46.84px;
-    
     border-radius: 4px;
     border: 1px solid rgba(6, 54, 67, 0.4);
     overflow: hidden;
+    background-color: #c8e6c9;
 }
 
 .mapa-imagem {
@@ -64,7 +86,6 @@ body {
 
 .contato-item {
     margin-left: 20px;
-    /* Aplica a margem superior e inferior de 8px para os itens que ficam entre outros */
     margin-top: 8px;
     margin-bottom: 8px;
 }
@@ -74,13 +95,12 @@ body {
     align-items: center;
 }
 
-/* Regras específicas para o primeiro e último item: */
 .first-contato {
-    margin-top: 0; /* Remove a margem superior para o primeiro item */
+    margin-top: 0;
 }
 
 .last-contato {
-    margin-bottom: 0; /* Remove a margem inferior para o último item */
+    margin-bottom: 0;
 }
 
 .icone-social {
@@ -88,6 +108,7 @@ body {
     height: 36px;
     margin-right: 12px;
     display: block;
+    border-radius: 50%;
 }
 
 .contato-texto {
@@ -96,17 +117,104 @@ body {
     font-size: 18px;
     line-height: 25px;
     color: #063643;
-    
     display: inline-block;
     height: 25px;
 }
 
-.texto-whatsapp {
-    width: 168px;
+/* SEÇÃO CONTATO (DIREITA) */
+.contato-secao {
+    width: 600px;
+    min-width: 600px;
+    height: 692px;
+    background-color: #FAFDFF;
+    padding: 40px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
 }
-.texto-instagram {
-    width: 212px;
+
+.contato-secao h1 {
+    color: #063643;
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 30px;
 }
-.texto-facebook {
-    width: 195px;
+
+.formulario_ctt {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.forma {
+    display: flex;
+    flex-direction: column;
+}
+
+.forma label {
+    color: #063643;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.formulario_ctt input[type="text"],
+.formulario_ctt input[type="email"],
+.formulario_ctt textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1.5px solid rgba(0, 0, 0, 0.4);
+    border-radius: 6px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
+}
+
+.formulario_ctt input[type="text"],
+.formulario_ctt input[type="email"] {
+    height: 45px;
+}
+
+.formulario_ctt textarea {
+    height: 100px;
+    min-height: 100px;
+    resize: none;
+}
+
+.formulario_ctt input:focus,
+.formulario_ctt textarea:focus {
+    border-color: #063643;
+    box-shadow: 0 0 8px rgba(6, 54, 67, 0.5);
+}
+
+.enviar {
+    background-color: #063643;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    width: 160px;
+    height: 50px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    margin-top: 20px;
+    align-self: flex-start;
+}
+
+.enviar:hover {
+    background-color: #042730;
+    transform: translateY(-2px);
+}
+
+.enviar:active {
+    transform: translateY(0);
 }
