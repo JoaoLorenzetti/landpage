@@ -1,220 +1,86 @@
-* {
+/*
+ * RESET BÁSICO (Opcional, mas recomendado)
+ */
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* Você pode definir uma cor de fundo global aqui se quiser. */
 }
 
-body {
-    background-color: #e0f7fa;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 20px;
-}
-
-.container-principal {
-    width: 1020px;
-    height: 692px;
-    max-width: 1020px;
-    max-height: 692px;
-    display: flex;
-    background-color: #F8F8FF;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    flex-shrink: 0;
-}
-
-/* SEÇÃO LOCALIZAÇÃO (ESQUERDA) */
-.localizacao-card {
-    width: 420px;
-    min-width: 420px;
-    height: 692px;
-    background-color: #F8F8FF;
-    padding: 0;
-    border-right: 2px solid rgba(6, 54, 67, 0.1);
-    overflow: hidden;
-    flex-shrink: 0;
-}
-
-.titulo-localizacao {
-    margin-top: 51px;
-    margin-left: 21px;
-    margin-bottom: 40px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 100%;
-    color: #063643;
-    width: 117px;
-}
-
-.endereco-info {
-    margin-left: 20px;
-    margin-bottom: 70px;
-    font-family: 'Inter', sans-serif;
-    font-style: italic;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 26px;
-    color: #063643;
-    width: 280px;
-}
-
-.mapa-container {
-    width: 350px;
-    height: 244.16px;
-    margin-left: 35px;
-    margin-bottom: 46.84px;
-    border-radius: 4px;
-    border: 1px solid rgba(6, 54, 67, 0.4);
-    overflow: hidden;
-    background-color: #c8e6c9;
-}
-
-.mapa-imagem {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-}
-
-.contatos-sociais {
-    padding-bottom: 14px;
-}
-
-.contato-item {
-    margin-left: 20px;
-    margin-top: 8px;
-    margin-bottom: 8px;
-}
-
-.contato-info-box {
-    display: flex;
-    align-items: center;
-}
-
-.first-contato {
-    margin-top: 0;
-}
-
-.last-contato {
-    margin-bottom: 0;
-}
-
-.icone-social {
-    width: 36px;
-    height: 36px;
-    margin-right: 12px;
-    display: block;
-    border-radius: 50%;
-}
-
-.contato-texto {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
-    color: #063643;
-    display: inline-block;
-    height: 25px;
-}
-
-/* SEÇÃO CONTATO (DIREITA) */
-.contato-secao {
-    width: 600px;
-    min-width: 600px;
-    height: 692px;
-    background-color: #FAFDFF;
-    padding: 40px 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
-}
-
-.contato-secao h1 {
-    color: #063643;
-    font-family: 'Inter', sans-serif;
-    font-size: 28px;
-    font-weight: 700;
-    text-align: left;
-    margin-bottom: 30px;
-}
-
-.formulario_ctt {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.forma {
-    display: flex;
-    flex-direction: column;
-}
-
-.forma label {
-    color: #063643;
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    margin-bottom: 8px;
-}
-
-.formulario_ctt input[type="text"],
-.formulario_ctt input[type="email"],
-.formulario_ctt textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1.5px solid rgba(0, 0, 0, 0.4);
-    border-radius: 6px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    color: #333;
-    outline: none;
-    transition: border-color 0.3s;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
-}
-
-.formulario_ctt input[type="text"],
-.formulario_ctt input[type="email"] {
-    height: 45px;
-}
-
-.formulario_ctt textarea {
-    height: 100px;
-    min-height: 100px;
-    resize: none;
-}
-
-.formulario_ctt input:focus,
-.formulario_ctt textarea:focus {
-    border-color: #063643;
-    box-shadow: 0 0 8px rgba(6, 54, 67, 0.5);
-}
-
-.enviar {
-    background-color: #063643;
-    color: #ffffff;
+/*
+ * ESTILOS GLOBAIS (FONTES)
+ */
+.titulo-quem-somos {
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    width: 160px;
-    height: 50px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.1s;
-    margin-top: 20px;
-    align-self: flex-start;
 }
 
-.enviar:hover {
-    background-color: #042730;
-    transform: translateY(-2px);
+.texto-principal {
+    font-family: 'Open Sans', sans-serif;
 }
 
-.enviar:active {
-    transform: translateY(0);
+
+/*
+ * 1. SEÇÃO QUEM SOMOS (LAYOUT DESKTOP)
+ */
+.quem-somos {
+    /* Dimensões e Fundo */
+    width: 100%; 
+    max-width: 1920px; /* Limite de largura do seu design */
+    height: 300px;
+    background-color: #89C5D5; /* Cor de fundo turquesa */
+
+    /* Layout Flex para Logo e Texto (Lado a Lado) */
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo (logo + texto) horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 0 40px; 
+    margin: 0 auto; /* Garante que a seção fique centralizada na tela */
+}
+
+/*
+ * 2. LOGO (Lado Esquerdo)
+ */
+.logo-container {
+    /* O espaço do design (300px x 300px) */
+    width: 300px; 
+    height: 300px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilização da tag <img> */
+.logo-pindorama {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/*
+ * 3. TEXTO (Lado Direito)
+ */
+.texto-container {
+    /* A largura máxima do bloco de texto (899px) */
+    max-width: 899px; 
+    margin-left: 50px; /* Espaço entre a logo e o texto */
+    color: #063643; /* Cor do texto e do título */
+}
+
+.titulo-quem-somos {
+    /* Estilos do H2 "Quem somos?" */
+    font-size: 24px;
+    font-weight: 700; /* Bold */
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.texto-principal {
+    /* Estilos do parágrafo */
+    font-size: 20px;
+    font-weight: 400; /* Regular */
+    line-height: 26px; /* Altura da linha */
+    letter-spacing: 0.02em; /* 2% de espaçamento de letra */
+    margin: 0;
 }
