@@ -832,124 +832,418 @@ header {
     }
 }
 
+
+
+/* ==================== ADAPTAÇÕES DESKTOP ==================== */
+
+/* Classes para controle mobile/desktop */
+.mobile-only { display: block; }
+.desktop-only { display: none; }
+
+/* Adaptações começam em 1024px para não afetar o mobile */
 @media (min-width: 1024px) {
-    body {
-        border-top-left-radius: 40px;
-        border-top-right-radius: 40px;
-    }
-
+    /* Controle de visibilidade */
+    .mobile-only { display: none !important; }
+    .desktop-only { display: block !important; }
+    
+    /* ==================== HEADER DESKTOP ==================== */
     header {
-        height: clamp(100px, 10vw, 120px);
-        margin: 4vw auto 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 100%;
+        padding: 20px 80px;
+        background-color: #F8F8FF;
+        margin-top: 0px;
     }
-
-    .hamburger-menu {
-        width: clamp(50px, 5vw, 60px);
-        height: clamp(50px, 5vw, 60px);
-        left: 2.5vw;
+    
+    .desktop-menu {
+        display: flex !important;
+        gap: 40px;
+        align-items: center;
     }
-
-    .logo {
-        height: clamp(60px, 6vw, 70px);
+    
+    .desktop-menu a {
+        text-decoration: none;
+        color: #063643;
+        font-weight: 500;
+        font-size: 16px;
+        transition: color 0.3s;
+        font-family: 'Inter', sans-serif;
     }
-
+    
+    .desktop-menu a:hover {
+        color: #0F637A;
+    }
+    
+    /* ==================== HERO DESKTOP ==================== */
     #hero {
-        background-position: center -6vw;
-        background-size: 70% auto;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 60px 80px 40px;
+        background: #e8f4f8;
+        background-image: none;
     }
-
+    
     .hero-content {
-        height: clamp(500px, 45vw, 600px);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        align-items: center;
+        background: white;
+        padding: 60px;
+        border-radius: 20px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        margin-bottom: 40px;
+        position: relative;
+        height: auto;
+        min-height: 300px; /* Mantém altura mínima */
+        margin-top: -40px;
     }
-
-    .hero-title {
-        font-size: clamp(36px, 3.5vw, 45px);
-        top: 4vw;
+    
+    .hero-text-wrapper {
+        text-align: left;
+        position: static;
+        width: 100%;
+        max-width: 420px; /* Limita a largura */
     }
-
-    .hero-image {
-        height: clamp(180px, 15vw, 220px);
-        top: 9vw;
+    
+    .hero-title.desktop-only {
+        display: block !important;
+        position: static;
+        width: 100%;
+        font-size: 20px; /* Diminui o tamanho */
+        font-weight: 700;
+        color: #063643;
+        line-height: 1.5;
+        margin-bottom: 25px;
+        font-family: 'Poppins', sans-serif;
+        margin-top: -80px;
+        margin-left: 5px;
+        word-spacing: 3px;
     }
-
+    
     .cta-button {
-        height: clamp(55px, 5vw, 60px);
-        top: 27vw;
-        font-size: clamp(20px, 1.8vw, 22px);
-        border-radius: 0.6vw;
+        position: static;
+        width: auto;
+        height: auto;
+        background: #0F637A;
+        padding: 13px 28px; /* Botão menor */
+        font-size: 16px; /* Texto menor */
+        font-weight: 600;
+        border-radius: 8px;
+        transition: all 0.3s;
+        margin: 0;
+        margin-top: 20px;
+        margin-left: 10px;
+
+    }
+    
+    .cta-button:hover {
+        background: #0d5468;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(15, 99, 122, 0.3);
+    }
+    
+    .hero-image {
+        position: static;
+        width: 150%;
+        height: auto;
+        text-align: right;
+        margin-top: 20px;     
+        margin-left: -180px;    
+    }
+    
+    .hero-image img {
+        max-width: 100%;
+        height: auto;
+        transform: translateX(-10px) translateY(40px);
+    }
+    
+    /* Linhas decorativas */
+   .hero-lines img {
+    width: 80px;      /* Tamanho base menor */
+    height: 80px;     /* Tamanho base menor */
+    object-fit: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(360%, -120%) scale(2.8); /* Escala a imagem sem mudar posição */
+    z-index: 1;
+}
+    
+    /* ==================== CARROSSEL DE CAMPANHAS ==================== */
+    .campanhas-carousel {
+        position: relative;
+        display: flex !important;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 20px;
+    }
+    
+    .carousel-arrow {
+        background: transparent;
+        border: none;
+        font-size: 48px;
+        color: #333;
+        cursor: pointer;
+        transition: color 0.3s;
+        padding: 0;
+        width: 40px;
+        flex-shrink: 0;
+    }
+    
+    .carousel-arrow:hover {
+        color: #0F637A;
+    }
+    
+    .carousel-container {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        border-radius: 20px;
+    }
+    
+    .campanha-card {
+        display: none !important;
+        padding: 50px 60px;
+        border-radius: 20px;
+        grid-template-columns: auto 1fr auto;
+        gap: 40px;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        min-height: 200px;
+        max-height: 200px;
+    }
+    
+    .campanha-card.active {
+        display: grid !important;
+    }
+    
+    /* Banner 1 - Vacinação (azul claro) */
+    .campanha-vacinacao {
+        background: #5ba4bd;
+    }
+    
+      .campaign-title {
+        width: 400%;
+        height: 42px;
+        margin-left: 240px;
+        color: #063643;
+        margin-top: -40px;
     }
 
-    #Somos {
-        padding: 5vw 3vw;
-        margin-top: -8vw;
+      .campaign-date{
+
+         margin-left: 245px;
+         color: #0F637A;
+         margin-top: -5px;
+        
+
+      }
+
+      .campaign-button{
+        margin-left: 250px;
+        position: relative;
+        width: auto;
+        height: auto;
+        background: #F8F8FF;
+        padding: 13px 28px; /* Botão menor */
+        font-size: 16px; /* Texto menor */
+        font-weight: 600;
+        border-radius: 5px;
+        transition: all 0.3s;
+        margin-top: 40px;
+        z-index: 2;
+        border: none !important;
+        outline: none !important;
+        cursor: pointer;
+      }
+
+      .campaign-button:hover{
+        background: #1e3a52;
+        color: white;
+      }
+
+      
+
+      .decoration-img {
+        width: 80px;  
+        height: 80px;   
+        object-fit: contain;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-420%, -100%) rotate(-15deg) scale(1.2);
+        z-index: 1;
+        opacity: 80%;
     }
 
-    .Titulo {
-        font-size: clamp(40px, 3.8vw, 48px);
-        margin-bottom: 4vw;
+    .decoration2-img {
+        width: 80px;  
+        height: 80px;   
+        object-fit: contain;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-192%, -10%) rotate(-1deg) scale(1.2);
+        z-index: 1;
+        opacity: 80%;
     }
 
-    .logo2 {
-        width: clamp(250px, 18vw, 280px);
-        margin-bottom: 4vw;
-    }
+       .syringe-img{
+        width: 80px;  
+        height: 80px;   
+        object-fit: contain;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-315%, -35%) scale(1.4);
+        z-index: 1;
 
-    .texto1 {
-        font-size: clamp(18px, 1.6vw, 20px);
-        margin-bottom: 4vw;
-        max-width: 60%;
-    }
+      }
 
-    .texto2 {
-        font-size: clamp(20px, 1.8vw, 22px);
+      .cat-img{
+        width: 80px;  
+        height: 80px;   
+        object-fit: contain;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(300%, -5%) scale(1.7);
+        z-index: 1;
+      }
+    
+    /* Banner 2 - Adoção (azul escuro) */
+    .campanha-adocao {
+     background: #1e3a52;
+     background-image: url('images/fundo_banner2.svg');
+     background-size: cover;
+     background-position: center;
+     background-repeat: repeat;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 50px 60px;
+}
+
+.campanha-content-adocao {
+    color: white;
+    max-width: 50%;
+}
+
+.campanha-content-adocao h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    word-spacing: 5px;
+    width: 400%;
+    height: 42px;
+    margin-left: 5px;
+    margin-top: -40px;
+
+}
+
+.campanha-content-adocao p {
+    font-size: 16px;
+    color: white;
+    line-height: 1.5;
+    margin-bottom: 25px;
+     width: 400%;
+    margin-left: 5px;
+    margin-top: -20px;
+}
+
+.campanha-content-adocao button {
+    background: white;
+    color: #1a1a1a;
+    border: none;
+    padding: 11px 33px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: -5px;
+    margin-left: 25px;
+}
+
+.campanha-content-adocao button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.campanha-image-adocao {
+        width: 80px;  
+        height: 80px;   
+        object-fit: contain;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(100%, -50%) scale(0.6);
+        z-index: 1;
+}
+
+.campanha-image-adocao img {
+        width: 80px;  
+        height: 80px;   
+        object-fit: contain;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-30%, 20%) scale(2.9);
+        z-index: 1;
+}
+
+.campanha-image-adocao .gatos-img {
+        width: 80px;  
+        height: 80px;   
+        object-fit: contain;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(355%, -50%) scale(4.2);
+        z-index: 1;
+}
+    
+   /* Banner 3 - Banho e Tosa */
+
+    
+    /* ==================== DOTS DO CARROSSEL ==================== */
+    .carousel-dots {
+        display: flex !important;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: #ccc;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+    
+    .dot.active {
+        background: #0F637A;
     }
 }
 
+/* Adaptações para telas ainda maiores */
 @media (min-width: 1440px) {
     header {
-        height: clamp(120px, 10vw, 140px);
+        padding: 20px 100px;
     }
-
-    .hamburger-menu {
-        width: clamp(60px, 5vw, 70px);
-        height: clamp(60px, 5vw, 70px);
+    
+    #hero {
+        padding: 80px 100px 60px;
     }
-
-    .logo {
-        height: clamp(70px, 6vw, 80px);
-    }
-
-    .hero-content {
-        height: clamp(600px, 45vw, 700px);
-    }
-
-    .hero-title {
-        font-size: clamp(45px, 3.5vw, 52px);
-    }
-
-    .hero-image {
-        height: clamp(220px, 18vw, 300px); 
-        top: 8vw; 
-    }
-
-    .cta-button {
-        height: clamp(60px, 5vw, 70px);
-        font-size: clamp(22px, 1.8vw, 24px);
-    }
-
-    .Titulo {
-        font-size: clamp(48px, 3.8vw, 54px);
-    }
-
-    .logo2 {
-        width: clamp(280px, 18vw, 320px);
-    }
-
-    .texto1 {
-        font-size: clamp(20px, 1.6vw, 22px);
-    }
-
-    .texto2 {
-        font-size: clamp(22px, 1.8vw, 24px);
+    
+    .hero-title.desktop-only {
+        font-size: 48px;
     }
 }
