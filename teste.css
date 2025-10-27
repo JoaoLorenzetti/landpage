@@ -1,0 +1,955 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    background-color: #E2F5FA;
+}
+
+
+/* ==================== HEADER ==================== */
+header {
+    width: 100%;
+    height: clamp(60px, 20vw, 80px);
+    background-color: #F8F8FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 8vw auto 0;
+}
+
+.hamburger-menu {
+    width: clamp(30px, 10vw, 40px);
+    height: clamp(30px, 10vw, 40px);
+    position: absolute;
+    left: 4vw;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.hamburger-menu img {
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    height: clamp(35px, 11vw, 44px);
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 100%;
+    width: auto;
+}
+
+/* ==================== SEÇÃO HERO ==================== */
+#hero {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #E2F5FA;
+    position: relative;
+    background-image: url(images/oval_fundo.svg);
+    background-repeat: no-repeat;
+    background-position: center -12vw;
+    background-size: 100% auto;
+}
+
+.hero-content {
+    width: 100%;
+    position: relative;
+    height: clamp(320px, 90vw, 400px);
+}
+
+.hero-title {
+    width: 55%;
+    position: absolute;
+    top: 7vw;
+    left: 8vw;
+    font-family: 'Inter', Arial, sans-serif;
+    font-weight: 700;
+    font-size: clamp(20px, 6vw, 28px);
+    line-height: 1.1;
+    color: #063643;
+}
+
+.hero-image {
+    width: 84%;
+    height: clamp(100px, 30vw, 140px);
+    position: absolute;
+    top: 18vw;
+    left: 8vw;
+    z-index: 2;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.cta-button {
+    width: 43%;
+    height: clamp(35px, 10vw, 45px);
+    position: absolute;
+    top: 53vw;
+    left: 27%;
+    background-color: #0F637A;
+    color: #F8F8FF;
+    border: none;
+    border-radius: 1vw;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    font-size: clamp(14px, 4vw, 18px);
+    transition: background-color 0.3s ease;
+    z-index: 3;
+}
+
+.cta-button:hover {
+    background-color: #0d5468;
+}
+
+/* ==================== SEÇÃO QUEM SOMOS ==================== */
+#Somos {
+    width: 100%;
+    background-color: #89C5D5;
+    padding: 8vw 5vw;
+    margin-top: -30vw;
+}
+
+.QuemSomos {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.Titulo {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 700;
+    font-size: clamp(24px, 7vw, 32px);
+    color: #063643;
+    margin-bottom: 8vw;
+}
+
+.logo2 {
+    width: clamp(150px, 42vw, 200px);
+    margin-bottom: 8vw;
+}
+
+.logo2 img {
+    width: 100%;
+    height: auto;
+}
+
+.texto1 {
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    font-size: clamp(13px, 3.5vw, 16px);
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    color: #063643;
+    margin-bottom: 8vw;
+    max-width: 85%;
+}
+
+.texto2 {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 700;
+    font-size: clamp(15px, 4vw, 18px);
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: #063643;
+}
+
+/* =================== SEÇÃO SERVIÇOS ======================= */
+#Servicos {
+    width: 100%;
+    height: 330px;
+    background-color: #63B3C9;
+    padding: 30px 20px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.servicos-titulo {
+    width: 100%;
+    height: 45px;
+    margin-top: -3vw;
+    font-family: 'Inter', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    text-align: center;
+    color: #063643;
+}
+
+.servicos-texto {
+    width: 100%;
+    height: 50px;
+    margin: 20px auto 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #063643;
+}
+
+.btn-agendar {
+    width: 200px;
+    left: 40px;
+    height: 38.99px;
+    margin: 50px auto 0;
+    background-color: #F8F8FF;
+    color: #063643;
+    border: none;
+    border-radius: 2.19px;
+    padding: 5.48px 2.74px;
+    cursor: pointer;
+    font-family: 'Inter', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.btn-agendar:hover {
+    background-color: #e8e8f5;
+}
+
+.servicos-image {
+    position: absolute;
+    bottom: -30px;
+    right: 5px;
+    width: auto;
+    height: 126px;
+    z-index: 1;
+}
+
+.servicos-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* ==================== NOSSOS PROFISSIONAIS (GABRIEL) ==================== */
+
+.caixote {
+    width: 100%; 
+    height: 80px;
+    background-color: #e6f7ff; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    font-size: 20px; 
+    font-weight: bold; 
+    color: #003366; 
+    font-family: 'Poppins', sans-serif; 
+    margin: 40px auto 0 auto; 
+}
+
+.banner {
+    width: 100%;
+    padding: 4.33vw 5.34vw;
+    background-color: #F8F8FF;
+    display: grid; /* <--- muda para grid */
+    grid-template-columns: repeat(2, 1fr); /* duas colunas */
+    gap: 5vw; /* espaçamento entre cards */
+    justify-items: center; /* centraliza os cards */
+    box-sizing: border-box;
+}
+
+
+.cartao_medico { 
+    width: 100%;
+    max-width: 42.24vw; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+}
+
+.cartao_medico .imagem { 
+    width: 100%;
+    aspect-ratio: 166 / 202; 
+    object-fit: cover;
+    border: 0.25vw solid rgba(6, 61, 67, 0.5); 
+    border-radius: 1.02vw;
+    margin-bottom: 1.78vw; 
+}
+
+.cartao_medico .nome {
+    width: 100%;
+    margin: 0; 
+    color: #063643;
+    font-size: 3.85vw; 
+    font-weight: 500;
+    line-height: 100%;
+    text-align: center;
+}
+
+.cartao_medico .especialidade {
+    width: 100%;
+    margin: 0;
+    margin-top: 0.25vw; 
+    color: #063643;
+    font-size: 2.75vw; 
+    font-weight: 400;
+    line-height: 100%;
+    text-align: center;
+}
+
+/* ==================== AVALIAÇÕES (GABRIEL) ==================== */
+
+:root {
+    --cor-fundo-secao: #e6f7ff;
+    --cor-texto-principal: #063643;
+    --cor-botao-fundo: #C7EBFB;
+    --cor-fundo-container: var(--cor-fundo-secao); 
+    --tamanho-foto: 52px;
+    --espacamento-item-vertical: 16px; 
+    --espacamento-interno-container: 20px;
+}
+
+.avaliacoes_secao {
+    width: 100%; 
+    background-color: var(--cor-fundo-secao); 
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    margin: 0 auto; 
+}
+
+.container_principal {
+    width: 100%; 
+    background-color: var(--cor-fundo-container); 
+    padding: var(--espacamento-interno-container) 15px; 
+    box-sizing: border-box; 
+}
+
+.avaliacoes_titulo {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--cor-texto-principal);
+    line-height: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.quadrante_avaliacao {
+    display: none; 
+    width: 100%;
+}
+
+.quadrante_avaliacao.pagina_ativa {
+    display: block; 
+}
+
+.item_avaliacao {
+    display: flex;
+    align-items: flex-start; 
+    margin-bottom: var(--espacamento-item-vertical); 
+}
+
+.item_avaliacao:last-child {
+    margin-bottom: 0; 
+}
+
+.foto_cliente {
+    width: var(--tamanho-foto);
+    height: var(--tamanho-foto);
+    border-radius: 50%; 
+    object-fit: cover;
+    margin-right: 15px; 
+    flex-shrink: 0; 
+}
+
+.conteudo_cliente {
+    width: 100%; 
+}
+
+.estrelas_imagem {
+    width: 100px; 
+    height: 15.14px; 
+    object-fit: contain;
+    margin-bottom: 5px; 
+}
+
+.nome_cliente {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 13.24px;
+    color: var(--cor-texto-principal);
+    line-height: 100%;
+    letter-spacing: 0.01em; 
+    margin: 5px 0 8px 0; 
+}
+
+.texto_avaliacao {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 11.92px;
+    color: var(--cor-texto-principal);
+    line-height: 1.4; 
+    margin: 0;
+}
+
+.rodape_paginacao {
+    width: 100%;
+    height: 44.91px;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    margin-top: 25px; 
+}
+
+.numero_pagina {
+    font-family: 'Inter', sans-serif; 
+    font-size: 18px; 
+    font-weight: 400;
+    color: var(--cor-texto-principal);
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+
+.seta_navegacao {
+    width: 52px;
+    height: 44.91px;
+    color: var(--cor-texto-principal);
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, opacity 0.3s;
+}
+
+.seta_anterior {
+    margin-right: 15px; 
+    background-color: transparent; 
+    color: gray;
+}
+
+.seta_proxima {
+    background-color: var(--cor-botao-fundo);
+}
+
+.seta_navegacao:disabled,
+.seta_navegacao.desabilitado {
+    cursor: default;
+    opacity: 0.5;
+    background-color: transparent !important;
+}
+
+.seta_proxima:disabled,
+.seta_proxima.desabilitado {
+    background-color: transparent !important;
+    color: gray;
+}
+
+/* ==================== CONTATO (GABRIEL) ==================== */
+
+.contato_secao {
+    background-color: #FAFDFF;
+    padding: 2vw; 
+    display: flex;
+    justify-content: center;
+}
+
+.contato_secao .container {
+    width: 90%;
+    max-width: 400px;
+    padding: 0;
+}
+
+.contato_secao h1 {
+    color: #063643;
+    font-size: 5vw;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 5vw;
+}
+
+.formulario_ctt {
+    display: flex;
+    flex-direction: column;
+    gap: 3.75vw;
+}
+
+.forma {
+    display: flex;
+    flex-direction: column;
+}
+
+.forma label {
+    color: #063643;
+    font-size: 3.5vw;
+    font-weight: 700;
+    margin-bottom: 1.25vw;
+}
+
+.formulario_ctt input[type="text"],
+.formulario_ctt input[type="email"],
+.formulario_ctt textarea {
+    width: 100%;
+    height: 9.825vw;
+    padding: 2.5vw;
+    border: 0.28vw solid rgba(0, 0, 0, 0.4);
+    border-radius: 1.31vw;
+    box-sizing: border-box;
+    font-size: 4vw; 
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s;
+    box-shadow: 0 0.3275vw 0.3275vw 0 rgba(0, 0, 0, 0.15); 
+}
+
+.formulario_ctt textarea {
+    height: 24.89vw;
+    min-height: 24.89vw;
+    resize: none;
+}
+
+.formulario_ctt input:focus,
+.formulario_ctt textarea:focus {
+    border-color: #063643;
+    box-shadow: 0 0 1.25vw rgba(6, 54, 67, 0.5);
+}
+
+.enviar {
+    background-color: #063643;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 5.1175vw;
+    font-weight: 700;
+    width: 36.8375vw;
+    height: 14.07vw;
+    border: none;
+    border-radius: 1.31vw;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    margin-top: 6.25vw;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.enviar:hover {
+    background-color: #042730;
+} 
+
+/* ==================== REDES SOCIAIS (GABRIEL) ==================== */
+
+.caixote-social {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    background-color: #E2F5FA;
+}
+
+.caixote-social .icones {
+    display: flex;
+    gap: 30px;
+}
+
+.caixote-social .icone-link {
+    display: block;
+}
+
+.caixote-social .icone-link .imagem-social {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.caixote-social .icone-link:hover .imagem-social {
+    transform: scale(1.1);
+}
+
+/* ==================== FOOTER (GABRIEL) ==================== */
+
+.footer {
+    color: #063643;
+    background-color: #ffffff;
+    padding-top: 30px;
+}
+
+.footer .conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 20px 20px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    
+}
+
+.footer .links {
+    flex: 1 1 45%;
+    margin-bottom: 20px;
+}
+
+.footer h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.footer .link-itens {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footer span {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.footer span:hover {
+    color: #C7EBFB;
+}
+
+.footer-bottom {
+    background-color: #042730;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    color: #E2F5FA;
+}
+
+
+/* ==================== RESPONSIVIDADE ==================== */
+
+@media (min-width: 320px){
+
+    .body{
+        width: 100%;
+    }
+
+    .hero-image {
+        height: clamp(220px, 18vw, 300px); 
+        top: -1vw; 
+        display: flex;
+        left: 9.5vw;
+    }
+
+    #Somos {
+        padding: 8vw 5vw;
+        margin-top: -1vw;
+    }
+
+    .hero-content {
+        height: clamp(250px, 70vw, 360px); 
+    }
+
+    .cta-button {
+        margin-top: 10px;
+    }
+
+    .caixote {
+    margin: 5px auto 0 auto; 
+ }
+
+.footer {
+    padding-top: 30px;
+    margin-top: 50px;
+}
+
+
+.footer .conteudo {
+    max-width: 100%;
+}
+
+.footer .conteudo {
+    text-align: center;
+    
+}
+
+
+}
+
+@media (min-width: 375px){
+    .hero-image{
+        top: 3vw;
+    }
+
+    .cta-button{
+        margin-top: -2px;
+    }
+
+    .btn-agendar {
+         left: 70px;
+         margin: 38px auto 0;
+    }
+
+    .footer .link-itens {
+    margin-left: -10px; 
+}
+
+
+
+}
+
+
+@media (min-width: 425px){
+    .hero-image{
+        top: 7vw;
+    }
+
+    .cta-button{
+        margin-top: -2px;
+    }
+
+    .btn-agendar {
+         left: 95px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    body {
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+
+    header {
+        height: clamp(80px, 15vw, 100px);
+        margin: 5vw auto 0;
+    }
+
+    .hamburger-menu {
+        width: clamp(40px, 7vw, 50px);
+        height: clamp(40px, 7vw, 50px);
+        left: 3vw;
+    }
+
+    .logo {
+        height: clamp(50px, 8vw, 60px);
+    }
+
+    #hero {
+        background-position: center -8vw;
+        background-size: 80% auto;
+    }
+
+    .hero-content {
+        height: clamp(400px, 60vw, 500px);
+    }
+
+    .hero-title {
+        font-size: clamp(28px, 4.5vw, 36px);
+        top: 5vw;
+    }
+
+   .hero-image {
+        height: clamp(220px, 18vw, 300px); 
+        top: 12vw; 
+    }
+
+    .cta-button {
+        height: clamp(45px, 7vw, 55px);
+        top: 50vw;
+        font-size: clamp(16px, 2.5vw, 20px);
+        border-radius: 0.8vw;   
+        margin-top: -30px;
+    }
+
+    #Somos {
+        padding: 6vw 4vw;
+        margin-top: -1vw;
+    }
+
+    .Titulo {
+        font-size: clamp(32px, 5vw, 40px);
+        margin-bottom: 6vw;
+    }
+
+    .logo2 {
+        width: clamp(200px, 25vw, 250px);
+        margin-bottom: 6vw;
+    }
+
+    .texto1 {
+        font-size: clamp(16px, 2.2vw, 18px);
+        margin-bottom: 6vw;
+        max-width: 70%;
+    }
+
+    .texto2 {
+        font-size: clamp(18px, 2.5vw, 20px);
+    }
+
+    .servicos-titulo {
+        width: 100%;
+        height: 45px;
+        margin-top: 0vw;
+    }
+
+    .servicos-texto {
+        width: 400px;
+        height: 50px;
+        margin: 12px auto 0;
+        line-height: 23px;
+        font-size: 15px;
+    }
+
+    .btn-agendar {
+        width: 200px;
+        left: 265px;
+        height: 38.99px;
+        margin: 50px auto 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+    }
+
+    header {
+        height: clamp(100px, 10vw, 120px);
+        margin: 4vw auto 0;
+    }
+
+    .hamburger-menu {
+        width: clamp(50px, 5vw, 60px);
+        height: clamp(50px, 5vw, 60px);
+        left: 2.5vw;
+    }
+
+    .logo {
+        height: clamp(60px, 6vw, 70px);
+    }
+
+    #hero {
+        background-position: center -6vw;
+        background-size: 70% auto;
+    }
+
+    .hero-content {
+        height: clamp(500px, 45vw, 600px);
+    }
+
+    .hero-title {
+        font-size: clamp(36px, 3.5vw, 45px);
+        top: 4vw;
+    }
+
+    .hero-image {
+        height: clamp(180px, 15vw, 220px);
+        top: 9vw;
+    }
+
+    .cta-button {
+        height: clamp(55px, 5vw, 60px);
+        top: 27vw;
+        font-size: clamp(20px, 1.8vw, 22px);
+        border-radius: 0.6vw;
+    }
+
+    #Somos {
+        padding: 5vw 3vw;
+        margin-top: -8vw;
+    }
+
+    .Titulo {
+        font-size: clamp(40px, 3.8vw, 48px);
+        margin-bottom: 4vw;
+    }
+
+    .logo2 {
+        width: clamp(250px, 18vw, 280px);
+        margin-bottom: 4vw;
+    }
+
+    .texto1 {
+        font-size: clamp(18px, 1.6vw, 20px);
+        margin-bottom: 4vw;
+        max-width: 60%;
+    }
+
+    .texto2 {
+        font-size: clamp(20px, 1.8vw, 22px);
+    }
+}
+
+@media (min-width: 1440px) {
+    header {
+        height: clamp(120px, 10vw, 140px);
+    }
+
+    .hamburger-menu {
+        width: clamp(60px, 5vw, 70px);
+        height: clamp(60px, 5vw, 70px);
+    }
+
+    .logo {
+        height: clamp(70px, 6vw, 80px);
+    }
+
+    .hero-content {
+        height: clamp(600px, 45vw, 700px);
+    }
+
+    .hero-title {
+        font-size: clamp(45px, 3.5vw, 52px);
+    }
+
+    .hero-image {
+        height: clamp(220px, 18vw, 300px); 
+        top: 8vw; 
+    }
+
+    .cta-button {
+        height: clamp(60px, 5vw, 70px);
+        font-size: clamp(22px, 1.8vw, 24px);
+    }
+
+    .Titulo {
+        font-size: clamp(48px, 3.8vw, 54px);
+    }
+
+    .logo2 {
+        width: clamp(280px, 18vw, 320px);
+    }
+
+    .texto1 {
+        font-size: clamp(20px, 1.6vw, 22px);
+    }
+
+    .texto2 {
+        font-size: clamp(22px, 1.8vw, 24px);
+    }
+}
