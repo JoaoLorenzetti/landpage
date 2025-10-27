@@ -1209,8 +1209,109 @@ header {
         z-index: 1;
 }
     
-   /* Banner 3 - Banho e Tosa */
+  /* Banner 3 - Banho e Tosa (verde água) */
+.campanha-banho {
+    background: #F8F8FF;
+    background-image: url('images/fundo_banner3.svg');
+    background-size: 50% 100%;
+    background-position: right center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 60px;
+    position: relative;
+}
 
+.campanha-banho .campanha-content {
+    color: #063643;
+    max-width: 50%;
+    position: relative;
+    z-index: 2;
+}
+
+.campanha-banho .campanha-content h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #063643;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    word-spacing: 5px;
+    width: 400%;
+    height: 42px;
+    margin-left: -20px;
+    margin-top: -20px;
+    position: relative;
+    z-index: 3;
+}
+
+.campanha-banho .campanha-content p {
+    font-size: 16px;
+    color: #063643;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    width: 400%;
+    margin-left: -20px;
+    margin-top: -30px;
+    position: relative;
+    z-index: 3;
+}
+
+.campanha-banho .guarda-chuva-icon {
+    width: 80px;  
+    height: 80px;   
+    object-fit: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-162%, -106%) scale(1.9);
+    z-index: 1;
+}
+
+.campanha-banho .campanha-content button {
+    background: #063643;
+    color: white;
+    border: none;
+    padding: 11px 33px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: -5px;
+    margin-left: 25px;
+    position: relative;
+    z-index: 3;
+}
+
+.campanha-banho .campanha-content button:hover {
+    background: #1e3a52;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.campanha-banho .campanha-image {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(80%, -48%) scale(0.7);
+    z-index: 3;
+}
+
+.campanha-banho .campanha-image img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(200%, -50%) scale(3.5);
+    z-index: 3;
+}
     
     /* ==================== DOTS DO CARROSSEL ==================== */
     .carousel-dots {
