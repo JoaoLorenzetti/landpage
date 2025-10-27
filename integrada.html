@@ -13,27 +13,119 @@
 <body>
 
     <!-- CABEÇALHO -->
-    <header>
-        <button class="hamburger-menu">
-            <img src="images/Menu.svg" alt="Menu">
-        </button>
-        <div class="logo">
-            <img src="images/logo.svg" alt="Logo Pindorama Pets">
-        </div>
-    </header>
+<header>
+    <button class="hamburger-menu mobile-only">
+        <img src="images/Menu.svg" alt="Menu">
+    </button>
+    <div class="logo">
+        <img src="images/logo.svg" alt="Logo Pindorama Pets">
+    </div>
+    <!-- Menu Desktop - NOVO -->
+    <nav class="desktop-menu desktop-only">
+        <a href="#hero">Início</a>
+        <a href="#Servicos">Serviços</a>
+        <a href="#Somos">Sobre nós</a>
+        <a href=".contato_secao">Contato</a>
+    </nav>
+</header>
      
-    <!-- Seção Hero -->
-    <section id="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">
+   <!-- Seção Hero -->
+<section id="hero">
+    <div class="hero-content">
+        <!-- Wrapper para texto desktop - NOVO -->
+        <div class="hero-text-wrapper">
+            <h1 class="hero-title mobile-only">
                 Cuidamos do seu<br>animal com muito<br>amor
             </h1>
-            <div class="hero-image">
-                <img src="images/animais_hero.svg" alt="Vários pets olhando para a câmera">
-            </div>
+            <h1 class="hero-title desktop-only">
+                Cuidando do Seu Pet com<br>Profissionalismo e Carinho
+            </h1>
             <button class="cta-button">Entre em contato</button>
         </div>
-    </section>
+        
+        <div class="hero-image">
+            <img src="images/animais_hero.svg" alt="Vários pets olhando para a câmera">
+            <!-- Linhas decorativas - NOVO -->
+            <div class="hero-lines desktop-only">
+               <img src="images/detalhe.svg" alt="detalhe">
+            </div>
+        </div>
+    </div>
+    
+    <!-- Carrossel de Campanhas - NOVO (desktop only) -->
+    <div class="campanhas-carousel desktop-only">
+        <button class="carousel-arrow prev" aria-label="Banner anterior">‹</button>
+        
+        <div class="carousel-container">
+            <!-- Banner 1 - Vacinação -->
+             <div class="campanha-card campanha-vacinacao active">
+               <div class="card-left-decorations">
+            <!-- Patinha 1 -->
+            <img src="images/patinha.svg" alt="Patinha" class="decoration-img">
+        
+            <!-- Seringa -->
+            <img src="images/seringa.svg" alt="Seringa" class="syringe-img">
+        
+            <!-- Patinha 2 -->
+           <img src="images/patinha.svg" alt="Patinha" class="decoration2-img">
+        </div>
+
+        <div class="card-center-content">
+          <h2 class="campaign-title">Campanha de vacinação</h2>
+          <p class="campaign-date">Nos dias 19 a 28 de novembro</p>
+          <button class="campaign-button">Saiba mais</button>
+        </div>
+
+        <div class="card-right-decoration">
+          <!-- Silhueta do gato -->
+          <img src="images/gatinho_banner.svg" alt="Gato" class="cat-img">
+              </div>
+          </div>
+
+            <!-- Banner 2 - Adoção -->
+            <div class="campanha-card campanha-adocao">
+              <div class="campanha-content-adocao">
+                 <h3>Campanha de adoção</h3>
+                  <p>Dê um lar cheio de amor a quem só quer te fazer feliz.<br>
+                   Adote um amigo de quatro patas e transforme sua<br>
+                   vida e a dele.</p>
+                   <button>Saiba mais</button>
+              </div>
+                <div class="campanha-image-adocao">
+                 <img src="images/cachorro.svg" alt="Cachorro feliz">
+                 <img src="images/gato.svg" alt="Gatos" class="gatos-img">
+                </div>
+            </div>
+
+            <!-- Banner 3 - Banho e Tosa -->
+<div class="campanha-card campanha-banho">
+    <div class="campanha-content">
+        
+        <h3>Banho e tosa: cuidado e saúde para seu pet</h3>
+        <p>Nossa clínica dispõe do serviço de higiene para seu Pet<br>
+        permanecer limpo, cheiroso e longe de parasitas.</p>
+        
+        <!-- Guarda-chuva no canto -->
+        <img src="images/guardachuva.svg" alt="Guarda-chuva" class="guarda-chuva-icon">
+        
+        <button>Saiba mais</button>
+    </div>
+    <div class="campanha-image">
+        <img src="images/gato_banner3.svg" alt="Gato no banho">
+    </div>
+</div>
+    </div>
+        
+        <button class="carousel-arrow next" aria-label="Próximo banner">›</button>
+    </div>
+    
+    <!-- Indicadores do carrossel - NOVO -->
+    <div class="carousel-dots desktop-only">
+        <span class="dot active" data-slide="0"></span>
+        <span class="dot" data-slide="1"></span>
+        <span class="dot" data-slide="2"></span>
+    </div>
+</section>
 
     <!-- Seção Quem somos -->
     <section id="Somos">
@@ -88,41 +180,19 @@
     </div>
 
     <!-- Avaliações -->
- 
-    <section class="avaliacoes_secao">
-        <div class="container_principal">
-            <h1 class="avaliacoes_titulo">Avaliações dos Clientes</h1>
-            
-            <div class="quadrante_avaliacao pagina_ativa">
-                <div class="item_avaliacao">
-                    <img class="foto_cliente" src="assets/imagens/carlosalberto.jpg" alt="Carlos Alberto">
-                    <div class="conteudo_cliente">
-                        <div class="estrelas_container">
-                            <img class="estrelas_imagem" src="assets/imagens/stars.png" alt="5 estrelas de avaliação">
-                        </div>
-                        <h2 class="nome_cliente">Carlos Alberto</h2>
-                        <p class="texto_avaliacao">Atendimento excepcional! A equipe foi muito cuidadosa e atenciosa com meu pet.</p>
+<section class="avaliacoes_secao">
+    <div class="container_principal">
+        <h1 class="avaliacoes_titulo">Avaliações dos Clientes</h1>
+        
+        <div class="quadrante_avaliacao pagina_ativa">
+            <div class="item_avaliacao">
+                <img class="foto_cliente" src="assets/imagens/carlosalberto.jpg" alt="Carlos Alberto">
+                <div class="conteudo_cliente">
+                    <div class="estrelas_container">
+                        <img class="estrelas_imagem" src="assets/imagens/stars.png" alt="5 estrelas de avaliação">
                     </div>
-                </div>
-                <div class="item_avaliacao">
-                    <img class="foto_cliente" src="assets/imagens/neymarjr.jpg" alt="Neymar Jr">
-                    <div class="conteudo_cliente">
-                        <div class="estrelas_container">
-                            <img class="estrelas_imagem" src="assets/imagens/stars.png" alt="5 estrelas de avaliação">
-                        </div>
-                        <h2 class="nome_cliente">Neymar Jr</h2>
-                        <p class="texto_avaliacao">Não poderia estar mais feliz com o serviço desta clínica. Profissionais qualificados e atenciosos.</p>
-                    </div>
-                </div>
-                <div class="item_avaliacao">
-                    <img class="foto_cliente" src="assets/imagens/josseanasilva.png" alt="Josseana Silva">
-                    <div class="conteudo_cliente">
-                        <div class="estrelas_container">
-                            <img class="estrelas_imagem" src="assets/imagens/stars.png" alt="5 estrelas de avaliação">
-                        </div>
-                        <h2 class="nome_cliente">Josseana da Silva</h2>
-                        <p class="texto_avaliacao">Excelente clínica! Desde o primeiro contato, fui atendido com profissionalismo e gentileza.</p>
-                    </div>
+                    <h2 class="nome_cliente">Carlos Alberto</h2>
+                    <p class="texto_avaliacao">Atendimento excepcional! A equipe foi muito cuidadosa e atenciosa com meu pet.</p>
                 </div>
             </div>
 
@@ -156,49 +226,99 @@
                         <h2 class="nome_cliente">Luciana Da Silva</h2>
                         <p class="texto_avaliacao">Profissionais capacitados e atenciosos, meu gato recebeu o melhor cuidado. Recomendo muito!</p>
                     </div>
+                    <h2 class="nome_cliente">Neymar Jr</h2>
+                    <p class="texto_avaliacao">Não poderia estar mais feliz com o serviço desta clínica. Profissionais qualificados e atenciosos.</p>
                 </div>
             </div>
-
-            <div class="quadrante_avaliacao">
-                <div class="item_avaliacao">
-                    <img class="foto_cliente" src="assets/imagens/carlosalberto.jpg" alt="Matheus Brito">
-                    <div class="conteudo_cliente">
-                        <div class="estrelas_container">
-                            <img class="estrelas_imagem" src="assets/imagens/stars.png" alt="5 estrelas de avaliação">
-                        </div>
-                        <h2 class="nome_cliente">Matheus Brito</h2>
-                        <p class="texto_avaliacao">A equipe é super dedicada e o ambiente é acolhedor, perfeito para quem se importa com o bem-estar do pet.</p>
+            <div class="item_avaliacao">
+                <img class="foto_cliente" src="assets/imagens/josseanasilva.png" alt="Josseana Silva">
+                <div class="conteudo_cliente">
+                    <div class="estrelas_container">
+                        <img class="estrelas_imagem" src="assets/imagens/stars.png" alt="5 estrelas de avaliação">
                     </div>
+                    <h2 class="nome_cliente">Josseana da Silva</h2>
+                    <p class="texto_avaliacao">Excelente clínica! Desde o primeiro contato, fui atendido com profissionalismo e gentileza.</p>
                 </div>
-                <div class="item_avaliacao">
-                    <img class="foto_cliente" src="assets/imagens/neymarjr.jpg" alt="Luiz Jr">
-                    <div class="conteudo_cliente">
-                        <div class="estrelas_container">
-                            <img class="estrelas_imagem" src="assets/imagens/stars.png" alt="5 estrelas de avaliação">
-                        </div>
-                        <h2 class="nome_cliente">Luiz Jr</h2>
-                        <p class="texto_avaliacao">Atendimento excelente e muito atencioso! Meu pet recebeu todo o cuidado necessário e ficou ótimo.</p>
-                    </div>
-                </div>
-                <div class="item_avaliacao">
-                    <img class="foto_cliente" src="assets/imagens/josseanasilva.png" alt="Clariane Da Silva">
-                    <div class="conteudo_cliente">
-                        <div class="estrelas_container">
-                            <img class="estrelas_imagem" src="assets/imagens/stars.png" alt="5 estrelas de avaliação">
-                        </div>
-                        <h2 class="nome_cliente">Clariane Da Silva</h2>
-                        <p class="texto_avaliacao">Fiquei satisfeita com o atendimento, mas achei os preços um pouco altos para alguns serviços.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="rodape_paginacao">
-                <span class="numero_pagina">1</span>
-                <button class="seta_navegacao seta_anterior" aria-label="Página anterior"><</button>
-                <button class="seta_navegacao seta_proxima" aria-label="Próxima página">></button>
             </div>
         </div>
-    </section>
+
+        <div class="quadrante_avaliacao">
+            <div class="item_avaliacao">
+                <img class="foto_cliente" src="assets/imagens/carlosalberto.jpg" alt="João Henrique">
+                <div class="conteudo_cliente">
+                    <div class="estrelas_container">
+                        <img class="estrelas_imagem" src="assets/imagens/stars.png" alt="5 estrelas de avaliação">
+                    </div>
+                    <h2 class="nome_cliente">João Henrique</h2>
+                    <p class="texto_avaliacao">Atendimento de primeira, cuidam muito bem dos animais e sempre explicam tudo com clareza.</p>
+                </div>
+            </div>
+            <div class="item_avaliacao">
+                <img class="foto_cliente" src="assets/imagens/neymarjr.jpg" alt="Adamilton Jr">
+                <div class="conteudo_cliente">
+                    <div class="estrelas_container">
+                        <img class="estrelas_imagem" src="assets/imagens/stars.png" alt="5 estrelas de avaliação">
+                    </div>
+                    <h2 class="nome_cliente">Adamilton Jr</h2>
+                    <p class="texto_avaliacao">A clínica é muito bem equipada, e os profissionais são incríveis, mas o tempo de espera poderia ser menor.</p>
+                </div>
+            </div>
+            <div class="item_avaliacao">
+                <img class="foto_cliente" src="assets/imagens/josseanasilva.png" alt="Luciana Da Silva">
+                <div class="conteudo_cliente">
+                    <div class="estrelas_container">
+                        <img class="estrelas_imagem" src="assets/imagens/stars.png" alt="5 estrelas de avaliação">
+                    </div>
+                    <h2 class="nome_cliente">Luciana Da Silva</h2>
+                    <p class="texto_avaliacao">Profissionais capacitados e atenciosos, meu gato recebeu o melhor cuidado. Recomendo muito!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="quadrante_avaliacao">
+            <div class="item_avaliacao">
+                <img class="foto_cliente" src="assets/imagens/carlosalberto.jpg" alt="Matheus Brito">
+                <div class="conteudo_cliente">
+                    <div class="estrelas_container">
+                        <img class="estrelas_imagem" src="assets/imagens/stars.png" alt="5 estrelas de avaliação">
+                    </div>
+                    <h2 class="nome_cliente">Matheus Brito</h2>
+                    <p class="texto_avaliacao">A equipe é super dedicada e o ambiente é acolhedor, perfeito para quem se importa com o bem-estar do pet.</p>
+                </div>
+            </div>
+            <div class="item_avaliacao">
+                <img class="foto_cliente" src="assets/imagens/neymarjr.jpg" alt="Luiz Jr">
+                <div class="conteudo_cliente">
+                    <div class="estrelas_container">
+                        <img class="estrelas_imagem" src="assets/imagens/stars.png" alt="5 estrelas de avaliação">
+                    </div>
+                    <h2 class="nome_cliente">Luiz Jr</h2>
+                    <p class="texto_avaliacao">Atendimento excelente e muito atencioso! Meu pet recebeu todo o cuidado necessário e ficou ótimo.</p>
+                </div>
+            </div>
+            <div class="item_avaliacao">
+                <img class="foto_cliente" src="assets/imagens/josseanasilva.png" alt="Clariane Da Silva">
+                <div class="conteudo_cliente">
+                    <div class="estrelas_container">
+                        <img class="estrelas_imagem" src="assets/imagens/stars.png" alt="5 estrelas de avaliação">
+                    </div>
+                    <h2 class="nome_cliente">Clariane Da Silva</h2>
+                    <p class="texto_avaliacao">Fiquei satisfeita com o atendimento, mas achei os preços um pouco altos para alguns serviços.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="rodape_paginacao">
+            <button class="seta_navegacao seta_anterior" aria-label="Página anterior"><</button>
+            
+            <span class="numero_pagina">1</span>
+            
+            <button class="seta_navegacao seta_proxima" aria-label="Próxima página">></button>
+        </div>
+        </div>
+</section>
+
+    <script src="carrossel.js"></script>
 
     <script src="carrossel.js"></script>
 </body>
@@ -235,13 +355,13 @@
     <div class="caixote-social">
         <div class="icones">
             <a href="#" class="icone-link">
-                <img src="assets/imagens/whatsapp" alt="WhatsApp" class="imagem-social">
+                <img src="assets/imagens/whatsapp.png" alt="WhatsApp" class="imagem-social">
             </a>
             <a href="#" class="icone-link">
-                <img src="assets/imagens/instagram" alt="Instagram" class="imagem-social">
+                <img src="assets/imagens/instagram.png" alt="Instagram" class="imagem-social">
             </a>
             <a href="#" class="icone-link">
-                <img src="assets/imagens/facebook" alt="Facebook" class="imagem-social">
+                <img src="assets/imagens/facebook.png" alt="Facebook" class="imagem-social">
             </a>
         </div>
     </div>
@@ -271,7 +391,8 @@
         </div>
     </footer>
 
-    <script src="paginacao.js"></script>
+    <script src="carrosselmobile.js"></scrgitipt>
+    <script src="carrossel1desktop.js"></script>
     
 </body>
 </html>
