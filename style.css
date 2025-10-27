@@ -1348,3 +1348,7 @@ header {
         font-size: 48px;
     }
 }
+
+@media (min-width: 1920px) {
+    /* Ajustes para telas grandes */
+}
