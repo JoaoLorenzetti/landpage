@@ -1343,17 +1343,180 @@ header {
     }
 }
 
-/* Adaptações para telas ainda maiores */
+/* 1440px - Laptops grandes e monitores */
 @media (min-width: 1440px) {
-    header {
-        padding: 20px 100px;
+
+    .desktop-menu a {
+ 
+        font-size: 20px;
+    }
+
+    
+   .hero-title.desktop-only {
+        
+        font-size: 30px;
+        margin-top: -80px;
+    }
+
+    .cta-button {
+
+        padding: 20px 40px;
+        font-size: 20px; 
+        margin-top: 40px;
+        margin-left: 10px;
+
+    }
+
+    .hero-image {
+        position: static;
+        width: 150%;
+        height: auto;
+        text-align: right;
+        margin-top: 20px;     
+        margin-left: -180px;    
     }
     
-    #hero {
-        padding: 80px 100px 60px;
+    .hero-image img {
+        max-width: 80%;
+        height: auto;
+        transform: translateX(-10px) translateY(40px);
     }
+
+    .hero-lines img {
+ 
+    transform: translate(540%, -130%) scale(3.4); 
+
+}
+
+    .campanha-card {
+        min-height: 300px;
+        max-height: 300px;
+    }
+
     
-    .hero-title.desktop-only {
-        font-size: 48px;
+      .campaign-title {
+        width: 400%;
+        margin-left: 340px;
+        margin-top: -60px;
+        font-size: 36px;
     }
+
+      .campaign-date{
+
+         margin-left: 350px;
+         margin-top: 10px;
+         font-size: 22px;
+        
+
+      }
+
+      .campaign-button{
+        margin-left: 350px;
+        padding: 18px 36px; 
+        font-size: 20px; 
+ 
+      }
+      
+      .decoration-img {
+ 
+        transform: translate(-620%, -130%) rotate(-15deg) scale(1.6);
+  
+    }
+
+    .decoration2-img {
+
+        transform: translate(-320%, -10%) rotate(-1deg) scale(1.6);
+ 
+    }
+
+       .syringe-img{
+
+        transform: translate(-480%, -35%) scale(1.8);
+
+      }
+
+      .cat-img{
+
+        transform: translate(390%, 6%) scale(2.6);
+     
+      }
+      
+
+/* Banner 2 - Adoção (azul escuro) */
+
+
+.campanha-content-adocao h3 {
+    font-size: 36px;
+    margin-left: 5px;
+    margin-top: -40px;
+
+}
+
+.campanha-content-adocao p {
+    font-size: 22px;
+    margin-left: 10px;
+    margin-top: -10px;
+}
+
+.campanha-content-adocao button {
+
+    padding: 18px 40px;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 35px;
+}
+
+
+.campanha-image-adocao img {
+
+        transform: translate(40%, 35%) scale(4.5);
+ 
+}
+
+.campanha-image-adocao .gatos-img {
+ 
+        transform: translate(695%, -55%) scale(6.3);
+
+}
+
+
+/* Banner 3 - Banho e Tosa (verde água) */
+
+
+
+.campanha-banho .campanha-content h3 {
+
+    font-size: 28px;
+    margin-left: -10px;
+    margin-top: -10px;
+
+}
+
+.campanha-banho .campanha-content p {
+
+    font-size: 22px;
+    margin-left: -10px;
+    margin-top: -10px;
+}
+
+.campanha-banho .guarda-chuva-icon {
+
+    transform: translate(-183%, -112%) scale(2.9);
+
+}
+
+.campanha-banho .campanha-content button {
+ 
+    padding: 16px 40px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+
+.campanha-banho .campanha-image img {
+
+    transform: translate(350%, -30%) scale(5.0);
+}
+
 }
