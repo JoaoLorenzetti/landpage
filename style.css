@@ -434,29 +434,23 @@ body {
     margin: 0;
 }
 
-/* * ALTERAÇÕES MÍNIMAS APLICADAS AQUI: 
- * 1. justify-content: flex-end; -> justify-content: center;
- * 2. Adicionado 'gap' para espaçamento uniforme.
- */
 .rodape_paginacao {
     width: 100%;
     height: 44.91px;
     display: flex;
-    justify-content: center; /* ALTEADO PARA CENTRALIZAR */
+    justify-content: center; 
     align-items: center;
     margin-top: 25px; 
-    gap: 15px; /* Adiciona espaçamento entre <, 1, e > */
+    gap: 15px;
 }
 
-/* * ALTERAÇÕES MÍNIMAS APLICADAS AQUI: 
- * 1. Removido o margin-right para usar o 'gap' no container pai.
- */
+
 .numero_pagina {
     font-family: 'Inter', sans-serif; 
     font-size: 18px; 
     font-weight: 400;
     color: var(--cor-texto-principal);
-    margin-right: 0; /* Removido: margin-right: 10px; */
+    margin-right: 0; 
     display: flex;
     align-items: center;
     height: 30px;
@@ -481,11 +475,9 @@ body {
     transform: scale(1.1);
 }
 
-/* * ALTERAÇÕES MÍNIMAS APLICADAS AQUI: 
- * 1. Removido o margin-right para usar o 'gap' no container pai.
- */
+
 .seta_anterior {
-    margin-right: 0; /* Removido: margin-right: 15px; */
+    margin-right: 0; 
     background-color: transparent; 
     color: gray;
 }
