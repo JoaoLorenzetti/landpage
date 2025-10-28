@@ -1810,6 +1810,203 @@ header {
     text-transform: uppercase;
 }
 
+/* ==================== SEÇÃO QUEM SOMOS DESKTOP ==================== */
+#Somos {
+    background-color: #89C5D5;
+    width: 100%;
+    height: 280px;
+    padding: 30px 20px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.QuemSomos {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.Titulo {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #063643;
+    margin-bottom: 8vw;
+}
+
+.logo2-desktop {
+    width: clamp(150px, 42vw, 200px);
+    margin-bottom: 8vw;
+}
+
+.logo2-desktop img {
+        width: 80px;  
+        height: 80px;   
+        object-fit: contain;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-360%, -50%) scale(3.0);
+        z-index: 1;
+}
+
+.texto1 {
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    color: #063643;
+    margin-bottom: 8vw;
+    width: 500px;
+    text-align: left;
+    margin-left: 355px;
+    margin-top: -130px;
+}
+
+.texto2 {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 700;
+    font-size: clamp(15px, 4vw, 18px);
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: #063643;
+}
+
+/* =================== SEÇÃO SERVIÇOS DESKTOP ======================= */
+#Servicos {
+    width: 100%;
+    height: 280px;
+    background-color: #63B3C9;
+    padding: 30px 20px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.servicos-titulo-desktop {
+    width: 100%;
+    height: 45px;
+    font-family: 'Inter', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: center;
+    color: #063643;
+    margin-top: 17px;
+    margin-left: -258px;
+}
+
+.servicos-texto-desktop {
+    width: 400px;
+    height: 50px;
+    margin: 20px auto 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #063643;
+    margin-left: 450px;
+    margin-top: 15px;
+}
+
+.btn-agendar {
+    width: 200px;
+    left: 40px;
+    height: 38.99px;
+    margin: 50px auto 0;
+    background-color: #F8F8FF;
+    color: #063643;
+    border: none;
+    border-radius: 2.19px;
+    padding: 5.48px 2.74px;
+    cursor: pointer;
+    font-family: 'Inter', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    position: center;
+    z-index: 2;
+}
+
+.btn-agendar:hover {
+    background-color: #e8e8f5;
+}
+
+.servicos-image-desktop {
+    position: absolute;
+    bottom: -30px;
+    right: 5px;
+    width: auto;
+    height: 126px;
+    z-index: 1;
+}
+
+.servicos-image-desktop img {
+        width: 80px;  
+        height: 80px;   
+        object-fit: contain;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-950%, -150%) scale(3.0);
+        z-index: 1;
+}
+
+/* =================== SEÇÃO CUIDADOS DESKTOP ======================= */
+#Cuidados {
+    width: 100%;
+    height: 280px;
+    background-color: #89C5D5;
+    padding: 30px 20px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.cuidadosPets {
+    width: 100%;
+    height: 45px;
+    font-family: 'Inter', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: center;
+    color: #063643;
+    margin-top: 17px;
+    margin-left: -258px;
+}
+
+.textoCuidados {
+    width: 400px;
+    height: 50px;
+    margin: 20px auto 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #063643;
+    margin-left: 420px;
+    margin-top: 55px;
+}
+
+.imagem-cuidados {
+        width: 80px;  
+        height: 80px;   
+        object-fit: contain;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(100%, -150%) scale(0.2);
+        z-index: 1;
+}
 
 
 }
