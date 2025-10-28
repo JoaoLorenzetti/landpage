@@ -1,112 +1,154 @@
-body {
-    margin: 0;
-    padding: 20px;
-    background-color: #e0f7fa;
-}
-
-.localizacao-card {
-    width: 420px;
-    height: 692px;
-    background-color: #F8F8FF;
-    padding: 0;
-    border-radius: 8px;
-    box-sizing: border-box;
-    overflow: hidden;
-}
-
-.titulo-localizacao {
-    margin-top: 51px;
-    margin-left: 21px;
-    margin-bottom: 40px;
-    
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 100%;
-    color: #063643;
-    width: 117px;
-}
-
-.endereco-info {
-    margin-left: 20px;
-    margin-bottom: 70px;
-    
-    font-family: 'Inter', sans-serif;
-    font-style: italic;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 26px;
-    color: #063643;
-    width: 280px;
-}
-
-.mapa-container {
-    width: 350px;
-    height: 244.16px;
-    margin-left: 35px;
-    margin-bottom: 46.84px;
-    
-    border-radius: 4px;
-    border: 1px solid rgba(6, 54, 67, 0.4);
-    overflow: hidden;
-}
-
-.mapa-imagem {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-}
-
-.contatos-sociais {
-    padding-bottom: 14px;
-}
-
-.contato-item {
-    margin-left: 20px;
-    /* Aplica a margem superior e inferior de 8px para os itens que ficam entre outros */
-    margin-top: 8px;
-    margin-bottom: 8px;
-}
-
-.contato-info-box {
-    display: flex;
+.caixote {
+    width: 400px; 
+    height: 80px;
+    display: flex; 
+    justify-content: center; 
     align-items: center;
+    font-size: 20px; 
+    font-weight: bold; 
+    color: #003366; 
+    font-family: 'Poppins', sans-serif; 
+    margin: 40px auto 0 auto; 
 }
 
-/* Regras específicas para o primeiro e último item: */
-.first-contato {
-    margin-top: 0; /* Remove a margem superior para o primeiro item */
+.banner {
+    width: 100%; 
+    padding: 4.33vw 5.34vw;
+    background-color: #F8F8FF;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 4.33vw; 
+    box-sizing: border-box;
 }
 
-.last-contato {
-    margin-bottom: 0; /* Remove a margem inferior para o último item */
+.cartao_medico { 
+    width: 100%;
+    max-width: 42.24vw; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
 }
 
-.icone-social {
-    width: 36px;
-    height: 36px;
-    margin-right: 12px;
-    display: block;
+.cartao_medico .imagem { 
+    width: 100%;
+    aspect-ratio: 166 / 202; 
+    object-fit: cover;
+    border: 0.25vw solid rgba(6, 61, 67, 0.5); 
+    border-radius: 1.02vw;
+    margin-bottom: 1.78vw; 
 }
 
-.contato-texto {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
+.cartao_medico .nome {
+    width: 100%;
+    margin: 0; 
     color: #063643;
-    
-    display: inline-block;
-    height: 25px;
+    font-size: 3.85vw; 
+    font-weight: 500;
+    line-height: 100%;
+    text-align: center;
 }
 
-.texto-whatsapp {
-    width: 168px;
+.cartao_medico .especialidade {
+    width: 100%;
+    margin: 0;
+    margin-top: 0.25vw; 
+    color: #063643;
+    font-size: 2.75vw; 
+    font-weight: 400;
+    line-height: 100%;
+    text-align: center;
 }
-.texto-instagram {
-    width: 212px;
+
+/* Responsividade para 1024px */
+@media (min-width: 1024px) {
+    .caixote {
+        width: 254px;
+        height: 36px;
+        position: absolute;
+        top: 44px;
+        left: 80px;
+        margin: 0;
+        opacity: 1;
+        transform: rotate(0deg);
+        justify-content: flex-start;
+    }
+
+    .banner {
+        width: 1024px;
+        height: 460px;
+        margin: 40px auto 0 auto;
+        padding: 40px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-end;
+        gap: 20px;
+        position: relative;
+    }
+
+    .cartao_medico {
+        width: 240px;
+        max-width: 240px;
+        height: 296px;
+    }
+
+    .cartao_medico .imagem {
+        width: 240px;
+        height: 240px;
+        aspect-ratio: 1 / 1;
+        border: 2px solid rgba(6, 61, 67, 0.5);
+        border-radius: 8px;
+        margin-bottom: 8px;
+    }
+
+    .cartao_medico .nome {
+        font-size: 16px;
+    }
+
+    .cartao_medico .especialidade {
+        font-size: 14px;
+        margin-top: 4px;
+    }
 }
-.texto-facebook {
-    width: 195px;
+
+/* Responsividade para 1440px */
+@media (min-width: 1440px) {
+    .banner {
+        width: 1180px;
+    }
+}
+
+/* Responsividade para 1920px */
+@media (min-width: 1920px) {
+    .banner {
+        width: 1440px;
+        gap: 30px;
+    }
+
+    .cartao_medico {
+        width: 280px;
+        max-width: 280px;
+        height: 346px;
+    }
+
+    .cartao_medico .imagem {
+        width: 280px;
+        height: 280px;
+    }
+
+    .cartao_medico .nome {
+        font-size: 18px;
+    }
+
+    .cartao_medico .especialidade {
+        font-size: 16px;
+    }
+
+    .caixote {
+        width: 300px;
+        height: 42px;
+        font-size: 24px;
+    }
 }

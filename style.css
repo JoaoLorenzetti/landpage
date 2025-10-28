@@ -175,6 +175,197 @@ header {
     letter-spacing: 0.02em;
     color: #063643;
 }
+/*desk only*/
+
+/* Seção Quem Somos - Desktop Responsivo */
+
+#Somos {
+  width: 100%;
+  background-color: #89C5D5;
+  overflow: hidden;
+}
+
+.QuemSomos {
+  width: 100%;
+  height: 300px;
+  min-height: 300px;
+  max-height: 300px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Título "Quem somos?" */
+.QuemSomos .Titulo {
+  position: absolute;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #063643;
+  margin: 0;
+  text-align: center;
+  line-height: 100%;
+}
+
+/* Logo */
+.QuemSomos .logo2 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.QuemSomos .logo2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Texto 1 - Parágrafo principal */
+.QuemSomos .texto1 {
+  position: absolute;
+}
+
+.QuemSomos .texto1 p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #063643;
+  margin: 0;
+  line-height: 26px;
+}
+
+/* Texto 2 - Frase de destaque */
+.QuemSomos .texto2 {
+  position: absolute;
+  display: none; /* Não aparece nas imagens desktop */
+}
+
+.QuemSomos .texto2 p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #063643;
+  margin: 0;
+}
+
+/* === DESKTOP 1920px === */
+@media screen and (min-width: 1920px) {
+  .QuemSomos {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 100px;
+    justify-content: center;
+  }
+
+  .QuemSomos .Titulo {
+    width: 177px;
+    height: 36px;
+    font-size: 24px;
+    top: 93px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .QuemSomos .logo2 {
+    width: 300px;
+    height: 300px;
+    left: 100px;
+    top: 0;
+  }
+
+  .QuemSomos .texto1 {
+    width: 699px;
+    left: 50%;
+    top: 145px;
+    transform: translateX(-50%);
+  }
+
+  .QuemSomos .texto1 p {
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+    text-align: center;
+  }
+}
+
+/* === DESKTOP 1440px === */
+@media screen and (min-width: 1440px) and (max-width: 1919px) {
+  .QuemSomos {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 80px;
+    justify-content: center;
+  }
+
+  .QuemSomos .Titulo {
+    width: 155px;
+    height: 32px;
+    font-size: 22px;
+    top: 85px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .QuemSomos .logo2 {
+    width: 260px;
+    height: 260px;
+    left: 80px;
+    top: 20px;
+  }
+
+  .QuemSomos .texto1 {
+    width: 580px;
+    left: 50%;
+    top: 135px;
+    transform: translateX(-50%);
+  }
+
+  .QuemSomos .texto1 p {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+  }
+}
+
+/* === DESKTOP 1024px === */
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .QuemSomos {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 60px;
+    justify-content: center;
+  }
+
+  .QuemSomos .Titulo {
+    width: 140px;
+    height: 30px;
+    font-size: 20px;
+    top: 75px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .QuemSomos .logo2 {
+    width: 220px;
+    height: 220px;
+    left: 60px;
+    top: 40px;
+  }
+
+  .QuemSomos .texto1 {
+    width: 480px;
+    left: 50%;
+    top: 120px;
+    transform: translateX(-50%);
+  }
+
+  .QuemSomos .texto1 p {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+  }
+}
+
 
 /* =================== SEÇÃO SERVIÇOS ======================= */
 #Servicos {
@@ -316,6 +507,121 @@ header {
     font-weight: 400;
     line-height: 100%;
     text-align: center;
+}
+
+
+/*desk only*/
+.caixote {
+    width: 400px; 
+    height: 80px;
+    background-color: #e6f7ff; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    font-size: 20px; 
+    font-weight: bold; 
+    color: #003366; 
+    font-family: 'Poppins', sans-serif; 
+    margin: 40px auto 0 auto; 
+}
+
+.banner {
+    width: 100%; 
+    padding: 4.33vw 5.34vw;
+    background-color: #F8F8FF;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 4.33vw; 
+    box-sizing: border-box;
+}
+
+.cartao_medico { 
+    width: 100%;
+    max-width: 42.24vw; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+}
+
+.cartao_medico .imagem { 
+    width: 100%;
+    aspect-ratio: 166 / 202; 
+    object-fit: cover;
+    border: 0.25vw solid rgba(6, 61, 67, 0.5); 
+    border-radius: 1.02vw;
+    margin-bottom: 1.78vw; 
+}
+
+.cartao_medico .nome {
+    width: 100%;
+    margin: 0; 
+    color: #063643;
+    font-size: 3.85vw; 
+    font-weight: 500;
+    line-height: 100%;
+    text-align: center;
+}
+
+.cartao_medico .especialidade {
+    width: 100%;
+    margin: 0;
+    margin-top: 0.25vw; 
+    color: #063643;
+    font-size: 2.75vw; 
+    font-weight: 400;
+    line-height: 100%;
+    text-align: center;
+}
+
+/* Adaptação para Desktop - telas ≥ 1024px */
+@media (min-width: 1024px) {
+    .caixote {
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        margin: 0;
+        z-index: 10;
+    }
+
+    .banner {
+        width: 1180px;
+        height: 460px;
+        margin: 0 auto;
+        padding: 40px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-end;
+        gap: 20px;
+        position: relative;
+        margin-top: 120px; /* Espaço para o caixote ficar acima */
+    }
+
+    .cartao_medico {
+        width: 240px;
+        max-width: 240px;
+        height: 296px;
+    }
+
+    .cartao_medico .imagem {
+        width: 240px;
+        height: 240px;
+        aspect-ratio: 1 / 1;
+        border: 2px solid rgba(6, 61, 67, 0.5);
+        border-radius: 8px;
+        margin-bottom: 8px;
+    }
+
+    .cartao_medico .nome {
+        font-size: 16px;
+    }
+
+    .cartao_medico .especialidade {
+        font-size: 14px;
+        margin-top: 4px;
+    }
 }
 
 /* ==================== AVALIAÇÕES (GABRIEL) ==================== */
@@ -473,6 +779,104 @@ header {
     background-color: transparent !important;
     color: gray;
 }
+/*desk only*/
+
+
+@media (min-width: 1024px) {
+    .avaliacoes_secao {
+        padding: 40px 0;
+    }
+
+    .container_principal {
+        max-width: 1180px;
+        min-height: 626px;
+        padding: 40px 60px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .avaliacoes_titulo {
+        font-size: 28px;
+        text-align: left;
+        margin-bottom: 35px;
+    }
+
+    .avaliacoes_titulo::after {
+        content: " (34)";
+        font-weight: 400;
+    }
+
+    .quadrante_avaliacao {
+        flex: 1;
+    }
+
+    .item_avaliacao {
+        margin-bottom: 28px;
+        padding-bottom: 28px;
+        border-bottom: 1px solid rgba(6, 54, 67, 0.1);
+    }
+
+    .item_avaliacao:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .foto_cliente {
+        width: 80px;
+        height: 80px;
+        margin-right: 24px;
+    }
+
+    .estrelas_container {
+        margin-bottom: 8px;
+    }
+
+    .estrelas_imagem {
+        width: 120px;
+        height: 20px;
+    }
+
+    .nome_cliente {
+        font-size: 16px;
+        font-weight: 600;
+        margin: 8px 0 10px 0;
+    }
+
+    .texto_avaliacao {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .rodape_paginacao {
+        margin-top: auto;
+        justify-content: flex-end;
+        padding-top: 20px;
+    }
+
+    .numero_pagina {
+        font-size: 16px;
+        order: 1;
+    }
+
+    .seta_anterior {
+        order: 0;
+        margin-right: 10px;
+    }
+
+    .seta_proxima {
+        order: 2;
+        margin-left: 10px;
+    }
+
+    .seta_navegacao {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+}
+
 /* ==================== CONTATO (GABRIEL) ==================== */
 
 .contato_secao {
