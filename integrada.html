@@ -157,8 +157,12 @@
             <div class="texto1">
                 <p>Nossa clínica veterinária é comprometida com o cuidado e bem-estar de cada pet, com uma equipe dedicada e instalações modernas, buscamos garantir saúde e conforto em cada atendimento.</p>
             </div>
+<<<<<<< HEAD
             
             <div class="texto2 mobile-only"> 
+=======
+            <div class="texto2 mobile-only">
+>>>>>>> Joao
                 <p>Cuidamos do seu animalzinho com amor!</p>
             </div>
         </div>
@@ -167,11 +171,27 @@
 
     <!-- Seção Nossos Serviços -->
     <section id="Servicos">
-        <h2 class="servicos-titulo">Nossos serviços visam o cuidado do seu pet</h2>
+        <h2 class="servicos-titulo mobile-only">Nossos serviços visam o cuidado do seu pet</h2>
+        <h2 class="servicos-titulo-desktop desktop-only">Nossos serviços</h2>
         <p class="servicos-texto">Na nossa clínica veterinária, cada consulta é realizada com dedicação e atenção aos detalhes, garantindo o melhor cuidado para o seu pet.</p>
-        <button class="btn-agendar">Agende uma consulta</button>
-        <div class="servicos-image">
+        <button class="btn-agendar mobile-only">Agende uma consulta</button>
+        <div class="servicos-image mobile-only">
             <img src="images/Vector.svg" alt="Veterinário">
+        </div>
+        <div class="servicos-image-desktop desktop-only">
+            <img src="assets/imagens/gato" alt="Veterinário">
+        </div>
+    </section>
+
+ <!-- Seção Cuidados -->
+     <section id="Cuidados">
+        <div class="cuidadosPets desktop-only">
+            <div class="imagem-cuidados">
+                <img src="assets/imagens/mvcachorro" alt="cachorro">
+            </div>
+            <div class="texto1">
+                <p>NNós cuidamos do seu pet com o carinho e respeito que ele merece. Nossa equipe dedica atenção a cada detalhe, proporcionando um ambiente acolhedor e seguro para que seu animalzinho se sinta em casa. </p>
+            </div>
         </div>
     </section>
 
@@ -314,8 +334,13 @@
     </section>
 
     <!-- Contato -->
+<<<<<<< HEAD
     <section class="contato_secao" id="contato">
         <div class="container">
+=======
+    <section class="contato_secao">
+        <div class="container mobile-only">
+>>>>>>> Joao
             <h1>Entre em contato</h1>
             
             <form class="formulario_ctt">
@@ -339,9 +364,76 @@
             </form>
         </div>
     </section>
+
+<!-- Localização e Contato desktop -->
+    <div class="page-content desktop-only">
+        <div class="container-principal">
+            <div class="localizacao-card">
+                <h2 class="titulo-localizacao">Localização</h2>
+
+                <address class="endereco-info">
+                    Rua - Fulana de tal, 9999<br>
+                    CEP 99999-999<br>
+                    Pindorama/SP
+                </address>
+
+                <div class="mapa-container">
+                    <img class="mapa-imagem" src="assets/imagens/mapa.png" alt="Localização da Clínica no Mapa">
+                </div>
+
+                <div class="contatos-sociais">
+                    <div class="contato-item first-contato"> 
+                        <div class="contato-info-box">
+                            <img class="icone-social" src="assets/imagens/whatsapp.jpg" alt="Ícone do WhatsApp">
+                            <span class="contato-texto">(99)-99999999</span>
+                        </div>
+                    </div>
+
+                    <div class="contato-item"> 
+                        <div class="contato-info-box">
+                            <img class="icone-social" src="assets/imagens/instagram.jpg" alt="Ícone do Instagram">
+                            <span class="contato-texto">@PindoramaClinica</span>
+                        </div>
+                    </div>
+
+                    <div class="contato-item last-contato">
+                        <div class="contato-info-box">
+                            <img class="icone-social" src="assets/imagens/facebook.jpg" alt="Ícone do Facebook">
+                            <span class="contato-texto">PindoramaClinica</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="contato-secao-desktop">
+                <h1>Entre em contato</h1>
+                
+                <form class="formulario_ctt-desktop">
+                    <div class="forma-desktop">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="forma-desktop">
+                        <label for="sobrenome">Sobrenome</label>
+                        <input type="text" id="sobrenome" name="sobrenome" required>
+                    </div>
+                    <div class="forma-desktop">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="forma-desktop">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="3" required></textarea> 
+                    </div>
+                    
+                    <button type="submit" class="enviar-desktop">ENVIAR</button>
+                </form>
+            </section>
+        </div>
+    </div>
     
     <!-- Redes Sociais -->
-    <div class="caixote-social">
+    <div class="caixote-social mobile-only">
         <div class="icones">
             <a href="#" class="icone-link">
                 <img src="assets/imagens/whatsapp.png" alt="WhatsApp" class="imagem-social">
@@ -356,7 +448,7 @@
     </div>
     
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer mobile-only">
         <div class="conteudo">
             <div class="links">
                 <h3>NOSSOS SERVIÇOS</h3>
@@ -380,7 +472,51 @@
         </div>
     </footer>
 
+<<<<<<< HEAD
     <script src="avaliacao.js"></script>
+=======
+<!-- Footer Desktop -->
+
+    <footer class="footer-desktop desktop-only">
+        <div class="conteudo-desktop">
+            <div class="margem-logo-desktop">
+                <img src="assets/imagens/logotipo" alt="Pindorama Pets Logo" class="imagem-desktop">
+            </div>
+
+            <div class="margem-desktop">
+                <h3 class="titulo_header-desktop">NOSSOS SERVIÇOS</h3>
+                <div class="text-group-desktop">
+                    <p class="txt_footer-desktop">SOBRE NÓS</p>
+                    <p class="txt_footer-desktop">CONSULTA VETERINÁRIA</p>
+                    <p class="txt_footer-desktop">NOSSOS SERVIÇOS</p>
+                </div>
+            </div>
+
+            <div class="margem-desktop">
+                <h3 class="titulo_header-desktop">INSTITUCIONAL</h3>
+                <div class="text-group-desktop">
+                    <p class="txt_footer-desktop">PROGRAMA DE ADOÇÃO</p>
+                    <p class="txt_footer-desktop">TERMOS DE COMPROMISSO</p>
+                    <p class="txt_footer-desktop">UNECT JR</p>
+                </div>
+            </div>
+
+            <div class="margem-margem_logoss-desktop">
+                <h3 class="titulo_header-desktop">NOSSOS CONTATOS</h3>
+                <div class="social-icons-desktop">
+                    <img src="assets/imagens/whatsapp.jpg" alt="WhatsApp" class="imagem_logoss-desktop">
+                    <img src="assets/imagens/instagram.jpg" alt="Instagram" class="imagem_logoss-desktop">
+                    <img src="assets/imagens/facebook.jpg" alt="Facebook" class="imagem_logoss-desktop">
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom_fotter-desktop">
+            <p class="txt_final-desktop">UNECT JR - TODOS OS DIREITOS RESERVADOS</p>
+        </div>
+    </footer>
+
+>>>>>>> Joao
     <script src="carrosselmobile.js"></script>
     <script src="carrossel1desktop.js"></script>
     
