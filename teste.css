@@ -1,339 +1,186 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
-/* Importação das fontes necessárias para todas as seções */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Poppins:wght@500;700&display=swap'); 
+/*
+ * -----------------------------------------------------
+ * REGRAS GLOBAIS ESSENCIAIS E IMPORTAÇÕES (FORA DO MEDIA QUERY)
+ * -----------------------------------------------------
+ */
 
-/* ============================================== */
-/* ESTILOS GLOBAIS/RESET */
-/* ============================================== */
-body, html {
-    margin: 0;
-    padding: 0;
+/* CORREÇÃO DE ESTOURO: Garante que padding e border não adicionem largura extra */
+*, *::before, *::after {
     box-sizing: border-box; 
 }
 
-*, *::before, *::after {
-    box-sizing: inherit; 
-}
+/* IMPORTAÇÃO DE FONTES */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
 
-/* ============================================== */
-/* ESTILOS DA SEÇÃO "NOSSOS SERVIÇOS" (PRIMEIRO BANNER) */
-/* ============================================== */
-.nossos-servicos-container {
-    display: none; /* Estilo padrão: escondido */
-    padding: 50px 20px;
-    background-color: #63B3C9; 
-}
 
-.nossos-servicos-container, .cuidados {
+/* 1. VISIBILIDADE E ESTILOS MOBILE (PADRÃO) */
+.desktop-only { 
     display: none; 
 }
 
-/* DESKTOP 1021px+ (NOSSOS SERVIÇOS) */
-@media (min-width: 1021px) {
-    .nossos-servicos-container {
-        display: block; /* Visível em desktop */
-    }
+/* Estilos base mobile para evitar sobreposição total em telas pequenas */
+.logo2, .Titulo, .texto1, .texto2, .servicos-titulo, .servicos-texto, .btn-agendar {
+    text-align: center;
+    padding: 15px;
+}
+
+
+/*
+ * -----------------------------------------------------
+ * @MEDIA QUERY: ESTILOS DE DESKTOP (A PARTIR DE 1024PX)
+ * -----------------------------------------------------
+ */
+@media screen and (min-width: 1024px) {
     
-    .titulo-servicos {
-        font-family: 'Inter', sans-serif;
-        font-size: 24px;
-        font-weight: 700;
-        color: #063643;
-        text-align: left;
-        max-width: 940px; 
-        margin: 0 auto 10px; 
+    /* REGRAS DE VISIBILIDADE DE DESKTOP */
+    .desktop-only {
+        display: block !important;
+    }
+    .mobile-only {
+        display: none !important;
     }
 
-    .servicos-content-wrapper {
-        display: flex;
-        align-items: flex-start;
-        gap: 30px;
-        max-width: 940px; 
+    /*
+     * SEÇÃO 1: QUEM SOMOS?
+     */
+    #Somos {
+        background-color: #63b3c8; 
+        border-top: 2px solid #348bb9; 
+        border-bottom: 2px solid #348bb9; 
+        outline: none;
+        box-shadow: none;
+    }
+
+    .QuemSomos {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr; 
+        grid-template-areas: "logo textoArea";
+        gap: 60px;
+        width: 100%; 
+        height: 300px; 
+        padding: 20px 80px; 
+        align-items: center; 
+        justify-content: center; 
+        margin: 0 auto;
+        border: none; 
+        outline: none;
+        box-shadow: none;
+    }
+
+    .logo-desk {
+        grid-area: logo;
+        justify-self: flex-end; 
+    }
+
+    .logo-desk img {
+        max-height: 250px;
+        width: auto;
+    }
+
+    .Titulo {
+        grid-area: textoArea; 
+        align-self: flex-start; 
+        font-size: 1.5em; 
+        text-align: left;
+        color: #333;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600; 
+        margin-top: 50px; 
+        margin-bottom: 20px; 
+    }
+
+    .texto1 {
+        grid-area: textoArea; 
+        align-self: flex-start; 
+        margin-top: 90px; 
+    }
+
+    .texto1 p {
+        font-size: 1em;
+        line-height: 1.6;
+        color: #555;
+        text-align: left;
+        max-width: 450px;
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+    }
+
+    /*
+     * SEÇÃO 2: SERVIÇOS
+     */
+    #Servicos {
+        width: 100%;
+        height: 400px;
+        position: relative;
+        background-color: #63b3c8; /* Fundo base azul/verde */
+        background-image: url('images/pattern-pets.svg'); /* Padrão de fundo */
+        background-repeat: repeat;
+        background-size: 80px;
+        
+        /* O padding não causará estouro devido ao box-sizing: border-box */
+        padding: 50px 80px; 
+        
+        display: grid;
+        grid-template-columns: 350px 1fr; 
+        grid-template-areas: 
+            "tituloArea tituloArea"
+            "imagemArea textoArea";
+        
+        gap: 20px 60px;
+        align-items: center;
+        
+        /* Centraliza a grade dentro da seção (width: 100%) */
+        justify-content: center; 
         margin: 0 auto; 
     }
-    
-    .servicos-content-wrapper .imagem-container {
-        width: 320px;
-        height: 260px;
-        flex-shrink: 0;
+
+    .servicos-titulo-desk {
+        grid-area: tituloArea; 
+        position: static;
+        text-align: left; 
+        margin: 0; 
+        padding-left: 0; /* Removido o padding extra do ajuste anterior */
+        
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        color: #063643; 
+        
+        /* Ajuste fino para o mockup */
+        margin-top: -30px; 
     }
-    
-    .texto-servicos {
-        width: 620px; 
-        flex-grow: 1;
+
+    .servicos-image {
+        grid-area: imagemArea; 
+        width: 100%;
+        height: auto;
+        display: flex; 
+        justify-content: flex-start; /* Alinha a imagem à esquerda da célula */
+        align-items: center; 
+        padding-left: 0; /* Removido o padding extra do ajuste anterior */
+    }
+
+    .servicos-image img {
+        max-width: 100%; 
+        height: auto;
+        object-fit: cover; 
+        border-radius: 8px; 
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .servicos-texto-desk {
+        grid-area: textoArea; 
+        position: static; 
+        margin-top: 0; 
         font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
         font-size: 20px;
         line-height: 30px;
         letter-spacing: 0.02em;
-        color: #063643;
-        margin: 0;
-    }
-    
-    .imagem-servicos {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 8px;
-        border: 1px solid #63B3C9;
-        box-sizing: border-box;
-    }
-}
-
-/* DESKTOP 1441px+ (NOSSOS SERVIÇOS) */
-@media (min-width: 1441px) {
-    .titulo-servicos,
-    .servicos-content-wrapper {
-        max-width: 1200px;
-    }
-    .servicos-content-wrapper .imagem-container {
-        width: 30%;
+        color: #333; 
+        max-width: 620px;
         height: auto;
-    }
-    .texto-servicos {
-        width: 70%;
-        font-size: 19px;
-    }
-}
-
-/* ============================================== */
-/* ESTILOS DA SEÇÃO "CONTAINER PETCARE" (SEGUNDO BANNER) */
-/* ============================================== */
-.container-petcare {
-    display: none; /* Estilo padrão: escondido */
-    width: 100%;
-    height: 325.11px;
-    background-color: #79c5d1;
-    position: relative;
-    overflow: hidden;
-}
-
-.conteudo-principal {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    height: 100%;
-    max-width: 1020px;
-    margin: 0 auto;
-    position: relative;
-    z-index: 2;
-}
-
-.texto-container {
-    width: 620px; 
-    height: 120px; 
-    padding-right: 40px;
-    display: flex;
-    align-items: center;
-    flex-shrink: 0;
-}
-
-.texto-container p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 30px;
-    color: #063643;
-    letter-spacing: 0.02em;
-    margin: 0;
-}
-
-.container-petcare .imagem-container {
-    width: 320px;
-    height: 260px;
-    margin-top: -30px;
-    flex-shrink: 0;
-}
-
-.container-petcare .imagem-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-/* DESKTOP 1020px+ (CONTAINER PETCARE) */
-@media (min-width: 1020px) {
-    .container-petcare {
-        display: block; /* Visível em desktop */
-    }
-
-    .conteudo-principal {
-        max-width: 980px; 
-    }
-}
-
-/* DESKTOP 1440px+ (CONTAINER PETCARE) */
-@media (min-width: 1440px) {
-    .conteudo-principal {
-        max-width: 1200px; 
-    }
-}
-
-/* DESKTOP 1920px+ (CONTAINER PETCARE) */
-@media (min-width: 1920px) {
-    .conteudo-principal {
-        max-width: 1400px; 
-    }
-}
-
-/* ============================================== */
-/* ESTILOS DA SEÇÃO "NOSSOS PROFISSIONAIS" */
-/* ============================================== */
-
-/* Mobile */
-.caixote {
-    width: 400px; 
-    height: 80px;
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-    font-size: 20px; 
-    font-weight: bold; 
-    color: #003366; 
-    font-family: 'Poppins', sans-serif; 
-    margin: 40px auto 0 auto; 
-}
-
-.banner {
-    width: 100%; 
-    padding: 4.33vw 5.34vw;
-    background-color: #F8F8FF;
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    gap: 4.33vw; 
-    box-sizing: border-box;
-}
-
-.cartao_medico { 
-    width: 100%;
-    max-width: 42.24vw; 
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    text-align: center;
-}
-
-.cartao_medico .imagem { 
-    width: 100%;
-    aspect-ratio: 166 / 202; 
-    object-fit: cover;
-    border: 0.25vw solid rgba(6, 61, 67, 0.5); 
-    border-radius: 1.02vw;
-    margin-bottom: 1.78vw; 
-}
-
-.cartao_medico .nome {
-    width: 100%;
-    margin: 0; 
-    color: #063643;
-    font-size: 3.85vw; 
-    font-weight: 500;
-    line-height: 100%;
-    text-align: center;
-}
-
-.cartao_medico .especialidade {
-    width: 100%;
-    margin: 0;
-    margin-top: 0.25vw; 
-    color: #063643;
-    font-size: 2.75vw; 
-    font-weight: 400;
-    line-height: 100%;
-    text-align: center;
-}
-
-/* DESKTOP 1024px+ (PROFISSIONAIS) */
-@media (min-width: 1024px) {
-    .caixote {
-        width: 254px;
-        height: 36px;
-        position: absolute;
-        top: 44px;
-        left: 80px;
-        margin: 0;
-        opacity: 1;
-        transform: rotate(0deg);
-        justify-content: flex-start;
-    }
-
-    .banner {
-        width: 1024px;
-        height: 460px;
-        margin: 40px auto 0 auto;
-        padding: 40px;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-items: flex-end;
-        gap: 20px;
-        position: relative;
-    }
-
-    .cartao_medico {
-        width: 240px;
-        max-width: 240px;
-        height: 296px;
-    }
-
-    .cartao_medico .imagem {
-        width: 240px;
-        height: 240px;
-        aspect-ratio: 1 / 1;
-        border: 2px solid rgba(6, 61, 67, 0.5);
-        border-radius: 8px;
-        margin-bottom: 8px;
-    }
-
-    .cartao_medico .nome {
-        font-size: 16px;
-    }
-
-    .cartao_medico .especialidade {
-        font-size: 14px;
-        margin-top: 4px;
-    }
-}
-
-/* DESKTOP 1440px+ (PROFISSIONAIS) */
-@media (min-width: 1440px) {
-    .banner {
-        width: 1180px;
-    }
-}
-
-/* DESKTOP 1920px+ (PROFISSIONAIS) */
-@media (min-width: 1920px) {
-    .banner {
-        width: 1440px;
-        gap: 30px;
-    }
-
-    .cartao_medico {
-        width: 280px;
-        max-width: 280px;
-        height: 346px;
-    }
-
-    .cartao_medico .imagem {
-        width: 280px;
-        height: 280px;
-    }
-
-    .cartao_medico .nome {
-        font-size: 18px;
-    }
-
-    .cartao_medico .especialidade {
-        font-size: 16px;
-    }
-
-    .caixote {
-        width: 300px;
-        height: 42px;
-        font-size: 24px;
     }
 }

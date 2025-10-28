@@ -3,66 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Containers Unificados - Pindorama Pets</title> 
-    <link rel="stylesheet" href="teste.css"> 
+    <title>Teste de Layout Responsivo</title>
+    <link rel="stylesheet" href="teste.css">
 </head>
 <body>
 
-    <section class="nossos-servicos-container">
-        <h2 class="titulo-servicos">Nossos serviços</h2>
-        <div class="servicos-content-wrapper">
-            <div class="imagem-container">
-                <img 
-                    src="assets/imagens/mvgato.jpg" 
-                    alt="Veterinária examinando um gato" 
-                    class="imagem-servicos"
-                >
-            </div>
-            </div>
-    </section>
-
-    <section class="container-petcare">
-        <div class="fundo-icones">
-        </div>
-        <div class="conteudo-principal">
-            <div class="texto-container">
-                <p>
-                    Nós cuidamos do seu pet com o carinho e respeito que ele
-                    merece. Nossa equipe dedica atenção a cada detalhe,
-                    proporcionando um ambiente acolhedor e seguro para que seu
-                    animalzinho se sinta em casa.
-                </p>
-            </div>
-            <div class="imagem-container">
-                <img src="assets/imagens/mvcachorro.png" alt="Veterinária sorrindo com um Golden Retriever">
-            </div>
-        </div>
-    </section>
-
-    <div class="banner">
-        <div class="caixote">Nossos profissionais</div>
-        
-        <div class="cartao_medico">
-            <img src="assets/imagens/carlos.jpg" alt="Carlos De Souza" class="imagem">
-            <h3 class="nome">Carlos De Souza</h3>
-            <p class="especialidade">Cirurgia Veterinária</p>
-        </div>
-        <div class="cartao_medico">
-            <img src="assets/imagens/joao.jpg" alt="João Paulo" class="imagem">
-            <h3 class="nome">João Paulo</h3>
-            <p class="especialidade">Dermatologia Veterinária</p>
-        </div>
-        <div class="cartao_medico">
-            <img src="assets/imagens/joses.jpg" alt="José da Silva" class="imagem">
-            <h3 class="nome">José da Silva</h3>
-            <p class="especialidade">Patologia</p>
-        </div>
-        <div class="cartao_medico">
-            <img src="assets/imagens/jose.jpg" alt="José Aldo" class="imagem">
-            <h3 class="nome">José Aldo</h3>
-            <p class="especialidade">Anestesiologia</p>
-        </div>
+<section id="Servicos">
+    
+    <h2 class="servicos-titulo mobile-only">Nossos serviços visam o cuidado do seu pet</h2>
+    <p class="servicos-texto mobile-only">Na nossa clínica veterinária, cada consulta é realizada com dedicação e atenção aos detalhes, garantindo o melhor cuidado para o seu pet.</p>
+    <button class="btn-agendar mobile-only">Agende uma consulta</button>
+    
+    <h2 class="servicos-titulo-desk desktop-only">Nossos serviços</h2>
+    
+    <p class="servicos-texto-desk desktop-only">
+        Na nossa clínica veterinária, cada consulta é realizada com dedicação e atenção aos detalhes, garantindo o melhor cuidado para o seu pet. Contamos com uma equipe experiente e atualizada para oferecer diagnósticos precisos e tratamentos eficazes.
+    </p>
+    
+    <div class="servicos-image mobile-only">
+    <img src="images/gatinho_banner.svg" alt="gato banner">
     </div>
     
+    <div class="servicos-image desktop-only">
+        <img src="assets/imagens/mvgato.jpg" alt="Veterinário com Gato">
+    </div>
+    
+</section>
+
 </body>
 </html>
