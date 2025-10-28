@@ -1337,83 +1337,64 @@ header {
 }
 
 #Somos {
-    background-color: #63b3c8; 
-    border-top: 2px solid #348bb9; 
-    border-bottom: 2px solid #348bb9; 
-    outline: none;
-    box-shadow: none;
-}
+        padding: 80px 80px; /* Ajusta o padding para desktop */
+        margin-top: 0; /* Remove a margem superior negativa */
+        background-color: #E2F5FA; /* Cor de fundo para desktop */
+    }
 
-.mobile-only {
-    display: none !important;
-}
+    .QuemSomos_desktop {
+        display: flex; /* Habilita o layout flexível */
+        max-width: 1200px;
+        margin: 0 auto;
+        align-items: center;
+        gap: 60px;
+        background-color: #89C5D5; /* A cor do fundo da sua seção original */
+        border-radius: 20px;
+        padding: 50px;
+    }
 
-.desktop-only {
-    display: block !important; 
-}
+    .QuemSomos_texto_desktop {
+        flex: 1; /* Ocupa o espaço disponível */
+        max-width: 60%;
+    }
 
-.QuemSomos {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr; 
-    grid-template-areas: "logo textoArea";
-    gap: 60px;
-    width: 100%; 
-    height: 300px; 
-    padding: 20px 80px; 
-    align-items: center; 
-    justify-content: center; 
-    margin: 0 auto;
-    border: none; 
-    outline: none;
-    box-shadow: none;
-}
+    .Titulo_desktop {
+        font-family: 'Poppins', Arial, sans-serif;
+        font-weight: 700;
+        font-size: 36px;
+        color: #063643;
+        margin-bottom: 25px;
+        text-align: left;
+    }
 
-.logo-desk {
-    grid-area: logo;
-    justify-self: flex-end; 
-}
+    .texto1_desktop p {
+        font-family: Arial, sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.6;
+        color: #063643;
+        margin-bottom: 20px;
+        text-align: left;
+    }
 
-.logo-desk img {
-    max-height: 250px;
-    width: auto;
-}
+    .texto2_desktop p {
+        font-family: 'Open Sans', Arial, sans-serif;
+        font-weight: 700;
+        font-size: 22px;
+        color: #063643;
+        text-align: left;
+    }
 
-.Titulo {
-    grid-area: textoArea; 
-    /* Posição no topo da área para empurrar o texto */
-    align-self: flex-start; /* Alinha o título no topo da sua área de grid */
-    
-    font-size: 1.5em; 
-    text-align: left;
-    color: #333;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600; 
-    
-    /* === NOVA MARGEM: Espaçamento para o texto1 abaixo (ex: 20px) === */
-    margin-top: 50px; /* Margem do topo para centralizar melhor o bloco */
-    margin-bottom: 20px; /* Margem de 20px que empurra o texto1 */
-}
+    .QuemSomos_imagem_desktop {
+        flex: 1;
+        max-width: 40%;
+        text-align: center;
+    }
 
-.texto1 {
-    grid-area: textoArea; 
-    
-    /* Alinha o texto1 logo abaixo do título */
-    align-self: flex-start; 
-    
-    /* === NOVA MARGEM: Espaço para começar após o Titulo e sua margin-bottom (50px + 1.5em + 20px) === */
-    margin-top: 90px; 
-}
-
-.texto1 p {
-    font-size: 1em;
-    line-height: 1.6;
-    color: #555;
-    text-align: left;
-    max-width: 450px;
-    font-family: 'Poppins', sans-serif;
-    
-    /* Garantir que não haja margem extra no parágrafo */
-    margin: 0;
+    .QuemSomos_imagem_desktop img {
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 
