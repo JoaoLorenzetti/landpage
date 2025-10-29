@@ -1351,6 +1351,173 @@ header {
         background: #0F637A;
     }
 
+    /* ==================== SEÇÃO QUEM SOMOS DESKTOP ==================== */
+#Somos {
+    background-color: #89C5D5;
+    width: 100%;
+    height: 280px;
+    padding: 30px 20px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.QuemSomos {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.Titulo {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #063643;
+    margin-bottom: 8vw;
+}
+
+.logo2-desktop {
+    width: clamp(150px, 42vw, 200px);
+    margin-bottom: 8vw;
+}
+
+.logo2-desktop img {
+        width: 80px;  
+        height: 80px;   
+        object-fit: contain;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-360%, -50%) scale(3.0);
+        z-index: 1;
+}
+
+.texto1 {
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    color: #063643;
+    margin-bottom: 8vw;
+    width: 500px;
+    text-align: left;
+    margin-left: 355px;
+    margin-top: -130px;
+}
+
+
+/* =================== SEÇÃO SERVIÇOS DESKTOP ======================= */
+#Servicos {
+    width: 100%;
+    height: 280px;
+    background-color: #63B3C9;
+    padding: 30px 20px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.servicos-titulo-desktop {
+    width: 100%;
+    height: 45px;
+    font-family: 'Inter', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: center;
+    color: #063643;
+    margin-top: 17px;
+    margin-left: -258px;
+}
+
+.servicos-texto-desktop {
+    width: 400px;
+    height: 50px;
+    margin: 20px auto 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #063643;
+    margin-left: 450px;
+    margin-top: 15px;
+}
+
+.servicos-image-desktop {
+    position: absolute;
+    bottom: -30px;
+    right: 5px;
+    width: auto;
+    height: 126px;
+    z-index: 1;
+}
+
+.servicos-image-desktop img {
+        width: 80px;  
+        height: 80px;   
+        object-fit: contain;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-950%, -150%) scale(3.0);
+        z-index: 1;
+}
+
+/* =================== SEÇÃO CUIDADOS DESKTOP ======================= */
+#Cuidados {
+    width: 100%;
+    height: 280px;
+    background-color: #89C5D5;
+    padding: 30px 20px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.cuidadosPets {
+    width: 100%;
+    height: 45px;
+    font-family: 'Inter', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: center;
+    color: #063643;
+    margin-top: 17px;
+    margin-left: -258px;
+}
+
+.textoCuidados {
+    width: 400px;
+    height: 50px;
+    margin: 20px auto 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #063643;
+    margin-left: 420px;
+    margin-top: 55px;
+}
+
+.imagem-cuidados {
+        width: 80px;  
+        height: 80px;   
+        object-fit: contain;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(100%, -150%) scale(0.2);
+        z-index: 1;
+}
+
+
+
 /* ==================== AVALIAÇÕES DESKTOP ==================== */
     :root {
     --cor-fundo-secao: #e6f7ff;
@@ -1505,11 +1672,295 @@ header {
 .seta_proxima.desabilitado {
     background-color: transparent !important;
     color: gray;
+
 }
 
-    /* ==================== SEÇÃO CONTATO DESKTOP ==================== */
+/* ==================== Nossos Profissionais ==================== */
+.caixote {
+    width: 100%; 
+    height: 80px;
+    background-color: #e6f7ff; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    font-size: 20px; 
+    font-weight: bold; 
+    color: #003366; 
+    font-family: 'Poppins', sans-serif; 
+    margin: 40px auto 0 auto; 
+}
 
-    .page-content {
+.banner {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 40px 40px;
+    background-color: #F8F8FF;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+    box-sizing: border-box;
+}
+
+.cartao_medico { 
+    width: 100%;
+    max-width: 180px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+}
+
+.cartao_medico .imagem { 
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid rgba(6, 61, 67, 0.5); 
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.cartao_medico .nome {
+    width: 100%;
+    margin: 0; 
+    color: #063643;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 100%;
+    text-align: center;
+}
+
+.cartao_medico .especialidade {
+    width: 100%;
+    margin: 0;
+    margin-top: 5px; 
+    color: #063643;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 100%;
+    text-align: center;
+}
+
+/* ==================== AVALIAÇÕES DESKTOP ==================== */
+
+:root {
+    --cor-fundo-secao: #e6f7ff;
+    --cor-texto-principal: #101010;
+    --cor-botao-fundo: #C7EBFB;
+    --cor-fundo-container: var(--cor-fundo-secao); 
+    --tamanho-foto: 52px;
+    --espacamento-item-vertical: 20px; 
+    --espacamento-interno-container: 40px;
+}
+
+.avaliacoes_secao {
+    width: 100%; 
+    background-color: var(--cor-fundo-secao); 
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+    margin: 0 auto; 
+}
+
+.container_principal {
+    width: 100%;
+    max-width: 1200px;
+    background-color: var(--cor-fundo-container); 
+    padding: var(--espacamento-interno-container); 
+    box-sizing: border-box; 
+}
+
+.avaliacoes_titulo_desktop {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #063643;
+    line-height: 100%;
+    text-align: left;
+    margin-bottom: 35px;
+    margin-left: 100px;
+}
+
+.quadrante_avaliacao {
+    display: none;
+    width: 100%;
+    margin-left: 100px;
+}
+
+.quadrante_avaliacao.pagina_ativa {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.item_avaliacao {
+    display: flex;
+    align-items: flex-start;
+    padding: var(--espacamento-item-vertical) 0;
+    border-bottom: none;
+    position: relative;
+}
+
+.item_avaliacao::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80%;
+    height: 1px;
+    background-color: rgba(6, 54, 67, 0.15);
+}
+
+.item_avaliacao:first-child {
+    padding-top: 0;
+}
+
+.item_avaliacao:last-child {
+    padding-bottom: 0;
+}
+
+.item_avaliacao:last-child::after {
+    display: none;
+}
+
+.foto_cliente {
+    width: var(--tamanho-foto);
+    height: var(--tamanho-foto);
+    border-radius: 50%; 
+    object-fit: cover;
+    margin-right: 15px;
+    flex-shrink: 0; 
+}
+
+.conteudo_cliente {
+    width: 100%; 
+}
+
+.estrelas_imagem {
+    width: 100px; 
+    height: 15.14px; 
+    object-fit: contain;
+    margin-bottom: 5px; 
+}
+
+.nome_cliente {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 13.24px;
+    color: var(--cor-texto-principal);
+    line-height: 100%;
+    letter-spacing: 0.01em; 
+    margin: 5px 0 8px 0; 
+}
+
+.texto_avaliacao {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 11.92px;
+    color: var(--cor-texto-principal);
+    line-height: 1.5; 
+    margin: 0;
+}
+
+.rodape_paginacao_desk {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+    margin-top: -10px !important;
+    gap: 0 !important;
+}
+
+.numero_pagina_desk {
+    font-family: 'Inter', sans-serif; 
+    font-size: 18px; 
+    font-weight: 400;
+    color: var(--cor-texto-principal);
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+
+.seta_navegacao {
+    width: 52px;
+    height: 44.91px;
+    color: var(--cor-texto-principal);
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, opacity 0.3s;
+}
+
+.seta_navegacao_desk {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s, transform 0.2s;
+    width: 40px;
+    height: 40px;
+}
+
+.seta_navegacao_desk img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.seta_navegacao_desk:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+.seta_navegacao_desk:active {
+    transform: scale(0.95);
+}
+
+.seta_navegacao_desk:disabled,
+.seta_anterior_desk.desabilitado,
+.seta_proxima_desk.desabilitado {
+    cursor: default;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.seta_anterior {
+    margin-right: 0; 
+    background-color: transparent; 
+    color: gray;
+}
+
+.seta_proxima {
+    background-color: var(--cor-botao-fundo);
+}
+
+.seta_navegacao:disabled,
+.seta_navegacao.desabilitado {
+    cursor: default;
+    opacity: 0.5;
+    background-color: transparent !important;
+}
+
+.seta_proxima:disabled,
+.seta_proxima.desabilitado {
+    background-color: transparent !important;
+    color: gray;
+}
+
+/* ==================== SEÇÃO CONTATO DESKTOP ==================== */
+   .page-content {
     flex: 1;
     display: flex;
     justify-content: center;
@@ -1529,6 +1980,8 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     flex-shrink: 0;
     margin-bottom: 30px;
+    margin-left: -15.5px;
+
 }
 
 /* SEÇÃO LOCALIZAÇÃO (ESQUERDA) */
@@ -1724,9 +2177,10 @@ header {
     transform: translateY(0);
 }
 
+
 /* ==================== FOOTER DESKTOP ==================== */
 .footer-desktop {
-    width: 100vw;
+    width: 100%;
     height: 14.167vw;
     background-color: #F8FBFB;
     border-top: 1px solid #C7E8F8;
@@ -1741,6 +2195,7 @@ header {
     padding-left: 19.27vw;
     color: #063643;
     flex-grow: 1;
+    margin-top: 20px;
 }
 
 .margem-desktop {
@@ -1780,7 +2235,7 @@ header {
 }
 
 .margem_logoss-desktop {
-    margin-right: 0;
+    margin-right: 70px;
 }
 
 .social-icons-desktop {
@@ -1801,6 +2256,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .txt_final-desktop {
@@ -1813,67 +2269,6 @@ header {
 
 
 }
-
-#Somos {
-        padding: 80px 80px; /* Ajusta o padding para desktop */
-        margin-top: 0; /* Remove a margem superior negativa */
-        background-color: #E2F5FA; /* Cor de fundo para desktop */
-    }
-
-    .QuemSomos_desktop {
-        display: flex; /* Habilita o layout flexível */
-        max-width: 1200px;
-        margin: 0 auto;
-        align-items: center;
-        gap: 60px;
-        background-color: #89C5D5; /* A cor do fundo da sua seção original */
-        border-radius: 20px;
-        padding: 50px;
-    }
-
-    .QuemSomos_texto_desktop {
-        flex: 1; /* Ocupa o espaço disponível */
-        max-width: 60%;
-    }
-
-    .Titulo_desktop {
-        font-family: 'Poppins', Arial, sans-serif;
-        font-weight: 700;
-        font-size: 36px;
-        color: #063643;
-        margin-bottom: 25px;
-        text-align: left;
-    }
-
-    .texto1_desktop p {
-        font-family: Arial, sans-serif;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 1.6;
-        color: #063643;
-        margin-bottom: 20px;
-        text-align: left;
-    }
-
-    .texto2_desktop p {
-        font-family: 'Open Sans', Arial, sans-serif;
-        font-weight: 700;
-        font-size: 22px;
-        color: #063643;
-        text-align: left;
-    }
-
-    .QuemSomos_imagem_desktop {
-        flex: 1;
-        max-width: 40%;
-        text-align: center;
-    }
-
-    .QuemSomos_imagem_desktop img {
-        max-width: 100%;
-        height: auto;
-    }
-
 
 
 /* 1440px - Laptops grandes e monitores */
@@ -2052,767 +2447,89 @@ header {
     transform: translate(350%, -30%) scale(5.0);
 }
 
+
+.texto1 {
+
+    margin-top: -200px;
+}
+
+.servicos-texto-desktop {
+
+    margin-left: 650px;
+    margin-top: 15px;
+}
+
+.servicos-image-desktop img {
+
+        transform: translate(-1210%, -150%) scale(3.0);
+      
+}
+
+.textoCuidados {
+    width: 400px;
+    height: 50px;
+    margin: 20px auto 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #063643;
+    margin-left: 680px;
+    margin-top: 55px;
+}
+
+.imagem-cuidados {
+        width: 80px;  
+        height: 80px;   
+        object-fit: contain;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(180%, -150%) scale(0.2);
+        z-index: 1;
+}
+
+.container-principal {
+    margin-left: 190px;
+}
+
 }
 
 @media (min-width: 1920px) {
-    /* Ajustes para telas grandes */
-}/* ==================== SEÇÃO QUEM SOMOS - MOBILE ==================== */
-#Somos {
-    width: 100%;
-    background-color: #89C5D5;
-    padding: 8vw 5vw;
-    margin-top: -30vw;
-}
-
-.QuemSomos {
-    max-width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.Titulo {
-    font-family: 'Poppins', Arial, sans-serif;
-    font-weight: 700;
-    font-size: clamp(24px, 7vw, 32px);
-    color: #063643;
-    margin-bottom: 8vw;
-}
-
-.logo2 {
-    width: clamp(150px, 42vw, 200px);
-    margin-bottom: 8vw;
-}
-
-.logo2 img {
-    width: 100%;
-    height: auto;
-}
-
-.logo-desk {
-    display: none; /* Esconde no mobile */
-}
-
-.texto1 {
-    font-family: Arial, sans-serif;
-    font-weight: 400;
-    font-size: clamp(13px, 3.5vw, 16px);
-    line-height: 1.4;
-    letter-spacing: 0.01em;
-    color: #063643;
-    margin-bottom: 8vw;
-    max-width: 85%;
-}
-
-.texto2 {
-    font-family: 'Open Sans', Arial, sans-serif;
-    font-weight: 700;
-    font-size: clamp(15px, 4vw, 18px);
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    color: #063643;
-}
-
-/* ==================== ADAPTAÇÕES DESKTOP ==================== */
-@media (min-width: 1024px) {
-    /* Controle de visibilidade */
-    .mobile-only { display: none !important; }
-    .desktop-only { display: block !important; }
-    
-    /* ==================== SEÇÃO QUEM SOMOS - DESKTOP ==================== */
-    #Somos {
-        background-color: #63b3c8 !important; 
-        border-top: 2px solid #348bb9 !important; 
-        border-bottom: 2px solid #348bb9 !important; 
-        margin-top: 0 !important;
-        padding: 20px 80px !important;
-        width: 100% !important;
-        height: 300px !important;
-    }
-
-    .QuemSomos {
-        display: grid !important;
-        grid-template-columns: 1fr 1.5fr !important; 
-        grid-template-areas: "logo textoArea" !important;
-        gap: 60px !important;
-        width: 100% !important; 
-        height: 100% !important; 
-        align-items: center !important; 
-        justify-content: center !important; 
-        margin: 0 auto !important;
-        text-align: left !important;
-        flex-direction: row !important;
-    }
-
-    .logo2 {
-        display: none !important; /* Esconde logo mobile */
-    }
-
-    .logo-desk {
-        display: block !important; /* Mostra logo desktop */
-        grid-area: logo !important;
-        justify-self: flex-end !important; 
-        width: auto !important;
-        margin: 0 !important;
-    }
-
-    .logo-desk img {
-        max-height: 250px !important;
-        width: auto !important;
-    }
-
-    .Titulo {
-        grid-area: textoArea !important; 
-        align-self: flex-start !important;
-        font-size: 1.5em !important; 
-        text-align: left !important;
-        color: #333 !important;
-        font-family: 'Poppins', sans-serif !important;
-        font-weight: 600 !important; 
-        margin-top: 50px !important;
-        margin-bottom: 20px !important;
-        width: auto !important;
-    }
 
     .texto1 {
-        grid-area: textoArea !important; 
-        align-self: flex-start !important; 
-        margin-top: 90px !important;
-        margin-bottom: 0 !important;
-        max-width: 450px !important;
-        width: auto !important;
-        text-align: left !important;
-    }
 
-    .texto1 p {
-        font-size: 1em !important;
-        line-height: 1.6 !important;
-        color: #555 !important;
-        text-align: left !important;
-        font-family: 'Poppins', sans-serif !important;
-        margin: 0 !important;
-    }
-
-    .texto2 {
-        display: none !important; /* Esconde texto2 no desktop */
-    }
-
-    /* ==================== HEADER DESKTOP ==================== */
-    header {
-        display: flex !important;
-        justify-content: space-between !important;
-        align-items: center !important;
-        max-width: 100% !important;
-        padding: 20px 80px !important;
-        background-color: #F8F8FF !important;
-        margin-top: 0px !important;
-        height: auto !important;
-    }
-    
-    .desktop-menu {
-        display: flex !important;
-        gap: 40px !important;
-        align-items: center !important;
-    }
-    
-    .desktop-menu a {
-        text-decoration: none;
-        color: #063643;
-        font-weight: 500;
-        font-size: 16px;
-        transition: color 0.3s;
-        font-family: 'Inter', sans-serif;
-    }
-    
-    .desktop-menu a:hover {
-        color: #0F637A;
-    }
-    
-    /* ==================== HERO DESKTOP ==================== */
-    #hero {
-        max-width: 1400px !important;
-        margin: 0 auto !important;
-        padding: 60px 80px 40px !important;
-        background: #e8f4f8 !important;
-        background-image: none !important;
-        margin-bottom: 20px !important;
-    }
-    
-    .hero-content {
-        display: grid !important;
-        grid-template-columns: 1fr 1fr !important;
-        gap: 60px !important;
-        align-items: center !important;
-        background: white !important;
-        padding: 60px !important;
-        border-radius: 20px !important;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.08) !important;
-        margin-bottom: 40px !important;
-        position: relative !important;
-        height: auto !important;
-        min-height: 300px !important;
-        margin-top: -40px !important;
-    }
-    
-    .hero-text-wrapper {
-        text-align: left !important;
-        position: static !important;
-        width: 100% !important;
-        max-width: 420px !important;
-    }
-    
-    .hero-title.desktop-only {
-        display: block !important;
-        position: static !important;
-        width: 100% !important;
-        font-size: 20px !important;
-        font-weight: 700 !important;
-        color: #063643 !important;
-        line-height: 1.5 !important;
-        margin-bottom: 25px !important;
-        font-family: 'Poppins', sans-serif !important;
-        margin-top: -80px !important;
-        margin-left: 5px !important;
-        word-spacing: 3px !important;
-    }
-    
-    .cta-button {
-        position: static !important;
-        width: auto !important;
-        height: auto !important;
-        background: #0F637A !important;
-        padding: 13px 28px !important;
-        font-size: 16px !important;
-        font-weight: 600 !important;
-        border-radius: 8px !important;
-        transition: all 0.3s !important;
-        margin: 0 !important;
-        margin-top: 20px !important;
-        margin-left: 10px !important;
-        top: auto !important;
-        left: auto !important;
-    }
-    
-    .cta-button:hover {
-        background: #0d5468 !important;
-        transform: translateY(-2px) !important;
-        box-shadow: 0 6px 20px rgba(15, 99, 122, 0.3) !important;
-    }
-    
-    .hero-image {
-        position: static !important;
-        width: 150% !important;
-        height: auto !important;
-        text-align: right !important;
-        margin-top: 20px !important;     
-        margin-left: -180px !important;
-        top: auto !important;
-        left: auto !important;
-    }
-    
-    .hero-image img {
-        max-width: 100% !important;
-        height: auto !important;
-        transform: translateX(-10px) translateY(40px) !important;
-    }
-    
-    /* Linhas decorativas */
-    .hero-lines img {
-        width: 80px !important;
-        height: 80px !important;
-        object-fit: contain !important;
-        position: absolute !important;
-        top: 50% !important;
-        left: 50% !important;
-        transform: translate(360%, -120%) scale(2.8) !important;
-        z-index: 1 !important;
-    }
-    
-    /* ==================== CARROSSEL DE CAMPANHAS ==================== */
-    .campanhas-carousel {
-        position: relative !important;
-        display: flex !important;
-        align-items: center !important;
-        gap: 30px !important;
-        margin-bottom: 20px !important;
-    }
-    
-    .carousel-arrow {
-        background: transparent !important;
-        border: none !important;
-        font-size: 48px !important;
-        color: #333 !important;
-        cursor: pointer !important;
-        transition: color 0.3s !important;
-        padding: 0 !important;
-        width: 40px !important;
-        flex-shrink: 0 !important;
-    }
-    
-    .carousel-arrow:hover {
-        color: #0F637A !important;
-    }
-    
-    .carousel-container {
-        position: relative !important;
-        width: 100% !important;
-        overflow: hidden !important;
-        border-radius: 20px !important;
-    }
-    
-    .campanha-card {
-        display: none !important;
-        padding: 50px 60px !important;
-        border-radius: 20px !important;
-        grid-template-columns: auto 1fr auto !important;
-        gap: 40px !important;
-        align-items: center !important;
-        position: relative !important;
-        overflow: hidden !important;
-        min-height: 200px !important;
-        max-height: 200px !important;
-    }
-    
-    .campanha-card.active {
-        display: grid !important;
-    }
-    
-    /* Banner 1 - Vacinação (azul claro) */
-    .campanha-vacinacao {
-        background: #5ba4bd !important;
-    }
-    
-    .campaign-title {
-        width: 400% !important;
-        height: 42px !important;
-        margin-left: 240px !important;
-        color: #063643 !important;
-        margin-top: -40px !important;
-    }
-
-    .campaign-date{
-        margin-left: 245px !important;
-        color: #0F637A !important;
-        margin-top: -5px !important;
-    }
-
-    .campaign-button{
-        margin-left: 250px !important;
-        position: relative !important;
-        width: auto !important;
-        height: auto !important;
-        background: #F8F8FF !important;
-        padding: 13px 28px !important;
-        font-size: 16px !important;
-        font-weight: 600 !important;
-        border-radius: 5px !important;
-        transition: all 0.3s !important;
-        margin-top: 40px !important;
-        z-index: 2 !important;
-        border: none !important;
-        outline: none !important;
-        cursor: pointer !important;
-    }
-
-    .campaign-button:hover{
-        background: #1e3a52 !important;
-        color: white !important;
-    }
-
-    .decoration-img {
-        width: 80px !important;  
-        height: 80px !important;   
-        object-fit: contain !important;
-        position: absolute !important;
-        top: 50% !important;
-        left: 50% !important;
-        transform: translate(-420%, -100%) rotate(-15deg) scale(1.2) !important;
-        z-index: 1 !important;
-        opacity: 80% !important;
-    }
-
-    .decoration2-img {
-        width: 80px !important;  
-        height: 80px !important;   
-        object-fit: contain !important;
-        position: absolute !important;
-        top: 50% !important;
-        left: 50% !important;
-        transform: translate(-192%, -10%) rotate(-1deg) scale(1.2) !important;
-        z-index: 1 !important;
-        opacity: 80% !important;
-    }
-
-    .syringe-img{
-        width: 80px !important;  
-        height: 80px !important;   
-        object-fit: contain !important;
-        position: absolute !important;
-        top: 50% !important;
-        left: 50% !important;
-        transform: translate(-315%, -35%) scale(1.4) !important;
-        z-index: 1 !important;
-    }
-
-    .cat-img{
-        width: 80px !important;  
-        height: 80px !important;   
-        object-fit: contain !important;
-        position: absolute !important;
-        top: 50% !important;
-        left: 50% !important;
-        transform: translate(300%, -5%) scale(1.7) !important;
-        z-index: 1 !important;
-    }
-    
-    /* Banner 2 - Adoção (azul escuro) */
-    .campanha-adocao {
-        background: #1e3a52 !important;
-        background-image: url('images/fundo_banner2.svg') !important;
-        background-size: cover !important;
-        background-position: center !important;
-        background-repeat: repeat !important;
-        display: flex !important;
-        justify-content: space-between !important;
-        align-items: center !important;
-        padding: 50px 60px !important;
-    }
-
-    .campanha-content-adocao {
-        color: white !important;
-        max-width: 50% !important;
-    }
-
-    .campanha-content-adocao h3 {
-        font-size: 24px !important;
-        font-weight: 700 !important;
-        color: white !important;
-        margin-bottom: 20px !important;
-        font-family: 'Poppins', sans-serif !important;
-        word-spacing: 5px !important;
-        width: 400% !important;
-        height: 42px !important;
-        margin-left: 5px !important;
-        margin-top: -40px !important;
-    }
-
-    .campanha-content-adocao p {
-        font-size: 16px !important;
-        color: white !important;
-        line-height: 1.5 !important;
-        margin-bottom: 25px !important;
-        width: 400% !important;
-        margin-left: 5px !important;
-        margin-top: -20px !important;
-    }
-
-    .campanha-content-adocao button {
-        background: white !important;
-        color: #1a1a1a !important;
-        border: none !important;
-        padding: 11px 33px !important;
-        font-size: 16px !important;
-        font-weight: 600 !important;
-        border-radius: 6px !important;
-        cursor: pointer !important;
-        transition: all 0.3s !important;
-        margin-top: -5px !important;
-        margin-left: 25px !important;
-    }
-
-    .campanha-content-adocao button:hover {
-        transform: translateY(-2px) !important;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.2) !important;
-    }
-
-    .campanha-image-adocao {
-        width: 80px !important;  
-        height: 80px !important;   
-        object-fit: contain !important;
-        position: absolute !important;
-        top: 50% !important;
-        left: 50% !important;
-        transform: translate(100%, -50%) scale(0.6) !important;
-        z-index: 1 !important;
-    }
-
-    .campanha-image-adocao img {
-        width: 80px !important;  
-        height: 80px !important;   
-        object-fit: contain !important;
-        position: absolute !important;
-        top: 50% !important;
-        left: 50% !important;
-        transform: translate(-30%, 20%) scale(2.9) !important;
-        z-index: 1 !important;
-    }
-
-    .campanha-image-adocao .gatos-img {
-        width: 80px !important;  
-        height: 80px !important;   
-        object-fit: contain !important;
-        position: absolute !important;
-        top: 50% !important;
-        left: 50% !important;
-        transform: translate(355%, -50%) scale(4.2) !important;
-        z-index: 1 !important;
-    }
-    
-    /* Banner 3 - Banho e Tosa (verde água) */
-    .campanha-banho {
-        background: #F8F8FF !important;
-        background-image: url('images/fundo_banner3.svg') !important;
-        background-size: 50% 100% !important;
-        background-position: right center !important;
-        background-repeat: no-repeat !important;
-        display: flex !important;
-        justify-content: space-between !important;
-        align-items: center !important;
-        padding: 50px 60px !important;
-        position: relative !important;
-    }
-
-    .campanha-banho .campanha-content {
-        color: #063643 !important;
-        max-width: 50% !important;
-        position: relative !important;
-        z-index: 2 !important;
-    }
-
-    .campanha-banho .campanha-content h3 {
-        font-size: 18px !important;
-        font-weight: 700 !important;
-        color: #063643 !important;
-        margin-bottom: 20px !important;
-        font-family: 'Poppins', sans-serif !important;
-        word-spacing: 5px !important;
-        width: 400% !important;
-        height: 42px !important;
-        margin-left: -20px !important;
-        margin-top: -20px !important;
-        position: relative !important;
-        z-index: 3 !important;
-    }
-
-    .campanha-banho .campanha-content p {
-        font-size: 16px !important;
-        color: #063643 !important;
-        line-height: 1.5 !important;
-        margin-bottom: 25px !important;
-        width: 400% !important;
-        margin-left: -20px !important;
-        margin-top: -30px !important;
-        position: relative !important;
-        z-index: 3 !important;
-    }
-
-    .campanha-banho .guarda-chuva-icon {
-        width: 80px !important;  
-        height: 80px !important;   
-        object-fit: contain !important;
-        position: absolute !important;
-        top: 50% !important;
-        left: 50% !important;
-        transform: translate(-162%, -106%) scale(1.9) !important;
-        z-index: 1 !important;
-    }
-
-    .campanha-banho .campanha-content button {
-        background: #063643 !important;
-        color: white !important;
-        border: none !important;
-        padding: 11px 33px !important;
-        font-size: 16px !important;
-        font-weight: 600 !important;
-        border-radius: 6px !important;
-        cursor: pointer !important;
-        transition: all 0.3s !important;
-        margin-top: -5px !important;
-        margin-left: 25px !important;
-        position: relative !important;
-        z-index: 3 !important;
-    }
-
-    .campanha-banho .campanha-content button:hover {
-        background: #1e3a52 !important;
-        color: white !important;
-        transform: translateY(-2px) !important;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.2) !important;
-    }
-
-    .campanha-banho .campanha-image {
-        width: 80px !important;
-        height: 80px !important;
-        object-fit: contain !important;
-        position: absolute !important;
-        top: 50% !important;
-        left: 50% !important;
-        transform: translate(80%, -48%) scale(0.7) !important;
-        z-index: 3 !important;
-    }
-
-    .campanha-banho .campanha-image img {
-        width: 80px !important;
-        height: 80px !important;
-        object-fit: contain !important;
-        position: absolute !important;
-        top: 50% !important;
-        left: 50% !important;
-        transform: translate(200%, -50%) scale(3.5) !important;
-        z-index: 3 !important;
-    }
-    
-    /* ==================== DOTS DO CARROSSEL ==================== */
-    .carousel-dots {
-        display: flex !important;
-        justify-content: center !important;
-        gap: 10px !important;
-    }
-    
-    .dot {
-        width: 12px !important;
-        height: 12px !important;
-        border-radius: 50% !important;
-        background: #ccc !important;
-        cursor: pointer !important;
-        transition: background 0.3s !important;
-    }
-    
-    .dot.active {
-        background: #0F637A !important;
-    }
+    margin-top: -280px;
 }
 
-/* ==================== AJUSTES PARA TELAS GRANDES ==================== */
-@media (min-width: 1440px) {
-    .desktop-menu a {
-        font-size: 20px !important;
-    }
-    
-    .hero-title.desktop-only {
-        font-size: 30px !important;
-        margin-top: -80px !important;
-    }
+.servicos-texto-desktop {
 
-    .cta-button {
-        padding: 20px 40px !important;
-        font-size: 20px !important; 
-        margin-top: 40px !important;
-        margin-left: 10px !important;
-    }
+    margin-left: 900px;
+    margin-top: 15px;
+}
 
-    .hero-image {
-        position: static !important;
-        width: 150% !important;
-        height: auto !important;
-        text-align: right !important;
-        margin-top: 20px !important;     
-        margin-left: -180px !important;    
-    }
-    
-    .hero-image img {
-        max-width: 80% !important;
-        height: auto !important;
-        transform: translateX(-10px) translateY(40px) !important;
-    }
+.servicos-image-desktop img {
 
-    .hero-lines img {
-        transform: translate(540%, -130%) scale(3.4) !important; 
-    }
-
-    .campanha-card {
-        min-height: 300px !important;
-        max-height: 300px !important;
-    }
-    
-    .campaign-title {
-        width: 400% !important;
-        margin-left: 340px !important;
-        margin-top: -60px !important;
-        font-size: 36px !important;
-    }
-
-    .campaign-date{
-        margin-left: 350px !important;
-        margin-top: 10px !important;
-        font-size: 22px !important;
-    }
-
-    .campaign-button{
-        margin-left: 350px !important;
-        padding: 18px 36px !important; 
-        font-size: 20px !important; 
-    }
+        transform: translate(-1505%, -150%) scale(3.0);
       
-    .decoration-img {
-        transform: translate(-620%, -130%) rotate(-15deg) scale(1.6) !important;
-    }
+}
 
-    .decoration2-img {
-        transform: translate(-320%, -10%) rotate(-1deg) scale(1.6) !important;
-    }
+.textoCuidados {
+  
+    margin-left: 980px;
+    margin-top: 55px;
+}
 
-    .syringe-img{
-        transform: translate(-480%, -35%) scale(1.8) !important;
-    }
+.imagem-cuidados {
+ 
+        transform: translate(285%, -150%) scale(0.2);
+        
+}
 
-    .cat-img{
-        transform: translate(390%, 6%) scale(2.6) !important;
-    }
+.container-principal {
+    margin-left: 190px;
+}
 
-    .campanha-content-adocao h3 {
-        font-size: 36px !important;
-        margin-left: 5px !important;
-        margin-top: -40px !important;
-    }
-
-    .campanha-content-adocao p {
-        font-size: 22px !important;
-        margin-left: 10px !important;
-        margin-top: -10px !important;
-    }
-
-    .campanha-content-adocao button {
-        padding: 18px 40px !important;
-        font-size: 20px !important;
-        margin-top: 5px !important;
-        margin-left: 35px !important;
-    }
-
-    .campanha-image-adocao img {
-        transform: translate(40%, 35%) scale(4.5) !important;
-    }
-
-    .campanha-image-adocao .gatos-img {
-        transform: translate(695%, -55%) scale(6.3) !important;
-    }
-
-    .campanha-banho .campanha-content h3 {
-        font-size: 28px !important;
-        margin-left: -10px !important;
-        margin-top: -10px !important;
-    }
-
-    .campanha-banho .campanha-content p {
-        font-size: 22px !important;
-        margin-left: -10px !important;
-        margin-top: -10px !important;
-    }
-
-    .campanha-banho .guarda-chuva-icon {
-        transform: translate(-183%, -112%) scale(2.9) !important;
-    }
-
-    .campanha-banho .campanha-content button {
-        padding: 16px 40px !important;
-        font-size: 20px !important;
-        margin-top: 10px !important;
-        margin-left: 50px !important;
-    }
-
-    .campanha-banho .campanha-image img {
-        transform: translate(350%, -30%) scale(5.0) !important;
-    }
 }
