@@ -183,33 +183,12 @@ O site foi desenvolvido seguindo a abordagem **Mobile First** e inclui breakpoin
 
 Desenvolvido pela equipe **UNECT JR**
 
-- **Design UI/UX**: [Nome]
-- **Frontend**: [Nome]
-- **Seção Avaliações e Profissionais**: Gabriel
-- **Carrosséis**: [Nome]
+- @JoaoLorenzetti
+- @gab-almeida12
 
 ## 📄 Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
-
----
-
-## 🤝 Contribuindo
-
-Contribuições são bem-vindas! Para contribuir:
-
-1. Faça um Fork do projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/NovaFuncionalidade`)
-3. Commit suas mudanças (`git commit -m 'Adiciona nova funcionalidade'`)
-4. Push para a branch (`git push origin feature/NovaFuncionalidade`)
-5. Abra um Pull Request
-
-## 📞 Contato
-
-**Pindorama Pets**
-- 📱 WhatsApp: (99) 99999-9999
-- 📧 Email: contato@pindoramapets.com
-- 📍 Endereço: Rua Fulana de Tal, 9999 - Pindorama/SP
 
 ---
 
